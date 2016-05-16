@@ -725,7 +725,7 @@ pln_equip(struct plist *plp, struct ichrstr *ip, char mission)
 		needed = 0;
 	    else {
 		pr("%s can't fly this mission"
-		   " while it is carrying a nuclear weapon",
+		   " while it is carrying a nuclear weapon\n",
 		   prplane(pp));
 		return -1;
 	    }
