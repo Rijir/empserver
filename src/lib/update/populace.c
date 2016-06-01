@@ -28,7 +28,7 @@
  *
  *  Known contributors to this file:
  *     Dave Pare, 1986
- *     Markus Armbruster, 2004-2014
+ *     Markus Armbruster, 2004-2016
  */
 
 #include <config.h>
@@ -115,14 +115,15 @@ populace(struct natstr *np, struct sctstr *sp, int etu)
 }
 
 int
-total_work(int sctwork, int etu, int civil, int milit, int uw, int maxpop)
+total_work(int sctwork, int etu, int civil, int milit, int uw,
+	   int maxworkers)
 {
-    if (civil > maxpop)
-	civil = maxpop;
-    if (milit > maxpop)
-	milit = maxpop;
-    if (uw > maxpop)
-	uw = maxpop;
+    if (civil > maxworkers)
+	civil = maxworkers;
+    if (milit > maxworkers)
+	milit = maxworkers;
+    if (uw > maxworkers)
+	uw = maxworkers;
 
     return (civil * sctwork / 100.0 + milit / 2.5 + uw) * etu / 100.0;
 }
