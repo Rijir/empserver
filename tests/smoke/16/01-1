@@ -29,3 +29,7 @@ plane *
 map #
 read y
 prod *
+neweff *
+budget
+nation
+__cmd added 3 1 0

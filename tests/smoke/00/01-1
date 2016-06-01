@@ -51,3 +51,8 @@ des 0,-2 c
 capital 0,-2
 des 0,0 g
 thres d 0,0 1
+prod *
+neweff *
+budget
+nation
+__cmd added 4 1 0

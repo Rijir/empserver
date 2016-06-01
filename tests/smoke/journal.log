@@ -378,6 +378,84 @@
     Play#1 input thres d 0,0 1
     Play#1 command threshold
     Play#1 output Play#1 6 0 592
+    Play#1 input prod *
+    Play#1 command production
+    Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 PRODUCTION SIMULATION
+    Play#1 output Play#1 1    sect  des eff avail  make p.e. cost   use1 use2 use3  max1 max2 max3   max
+    Play#1 output Play#1 1   -1,-1   g  10%   368   36d 1.00 $0                                       36
+    Play#1 output Play#1 1    1,-1   m 100%   329  329i 1.00 $0                                      329
+    Play#1 output Play#1 1    2,0    m 100%   574  574i 1.00 $0                                      574
+    Play#1 output Play#1 1 3 sectors
+    Play#1 output Play#1 6 0 592
+    Play#1 input neweff *
+    Play#1 command neweff
+    Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 EFFICIENCY SIMULATION
+    Play#1 output Play#1 1    sect  des    projected eff
+    Play#1 output Play#1 1    1,-3   +      0%
+    Play#1 output Play#1 1   -4,-2   +      0%
+    Play#1 output Play#1 1   -2,-2   +      0%
+    Play#1 output Play#1 1    0,-2   c      0%
+    Play#1 output Play#1 1    2,-2   +      0%
+    Play#1 output Play#1 1    4,-2   +      0%
+    Play#1 output Play#1 1    6,-2   +      0%
+    Play#1 output Play#1 1   -1,-1   g    100%
+    Play#1 output Play#1 1    1,-1   m    100%
+    Play#1 output Play#1 1    3,-1   +      0%
+    Play#1 output Play#1 1    5,-1   +      0%
+    Play#1 output Play#1 1   -2,0    +      0%
+    Play#1 output Play#1 1    0,0    g     40%
+    Play#1 output Play#1 1    2,0    m    100%
+    Play#1 output Play#1 1    4,0    +      0%
+    Play#1 output Play#1 1   -1,1    +      0%
+    Play#1 output Play#1 1    1,1    +      0%
+    Play#1 output Play#1 1    3,1    +      0%
+    Play#1 output Play#1 1    5,1    +      0%
+    Play#1 output Play#1 1    7,1    +      0%
+    Play#1 output Play#1 1   -2,2    +      0%
+    Play#1 output Play#1 1    0,2    +      0%
+    Play#1 output Play#1 1    2,2    +      0%
+    Play#1 output Play#1 1    4,2    +      0%
+    Play#1 output Play#1 1    6,2    +      0%
+    Play#1 output Play#1 1    8,2    +      0%
+    Play#1 output Play#1 1   10,2    +      0%
+    Play#1 output Play#1 1   -1,3    +      0%
+    Play#1 output Play#1 1    1,3    +      0%
+    Play#1 output Play#1 1    5,3    +      0%
+    Play#1 output Play#1 1 30 sectors
+    Play#1 output Play#1 6 0 592
+    Play#1 input budget
+    Play#1 command budget
+    Play#1 output Play#1 1 Sector Type			Production			    Cost
+    Play#1 output Play#1 1 Sector building			30 sectors      		     390
+    Play#1 output Play#1 1 Sector maintenance		3 sectors       		     180
+    Play#1 output Play#1 1 Military payroll		0 mil, 110 res                        54
+    Play#1 output Play#1 1 Total expenses.......................................................624
+    Play#1 output Play#1 1 Income from taxes		2110 civs, 150 uws                  +482
+    Play#1 output Play#1 1 Total income........................................................+482
+    Play#1 output Play#1 1 Balance forward						           24450
+    Play#1 output Play#1 1 Estimated delta						            -142
+    Play#1 output Play#1 1 Estimated new treasury.............................................24308
+    Play#1 output Play#1 6 0 591
+    Play#1 input nation
+    Play#1 command nation
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 (#1) 1 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 Nation status is ACTIVE     Bureaucratic Time Units: 591
+    Play#1 output Play#1 1 0% eff capital at 0,-2 has 1 civilian & 0 military
+    Play#1 output Play#1 1  The treasury has $24450.00     Military reserves: 110
+    Play#1 output Play#1 1 Education..........  0.00       Happiness.......  0.00
+    Play#1 output Play#1 1 Technology.........  0.00       Research........  0.00
+    Play#1 output Play#1 1 Technology factor : 25.00%     Plague factor :   0.00%
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 Max population : 1000
+    Play#1 output Play#1 1 Max safe population for civs/uws: 769/869
+    Play#1 output Play#1 1 No happiness needed
+    Play#1 output Play#1 6 0 591
+    Play#1 input __cmd added 4 1 0
+    Play#1 command __cmd
+    Play#1 output Play#1 6 0 592
     Play#1 input ctld
     Play#1 output Play#1 1 Bye-bye
     Play#1 logout 1
@@ -2061,6 +2139,78 @@
     Play#1 output Play#1 1   -2,2    o  87%   135   58o 0.50 $0                                       58
     Play#1 output Play#1 1 8 sectors
     Play#1 output Play#1 6 0 554
+    Play#1 input neweff *
+    Play#1 command neweff
+    Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 EFFICIENCY SIMULATION
+    Play#1 output Play#1 1    sect  des    projected eff
+    Play#1 output Play#1 1    1,-3   +      1%
+    Play#1 output Play#1 1   -4,-2   +      3%
+    Play#1 output Play#1 1   -2,-2   +      1%
+    Play#1 output Play#1 1    0,-2   c      1%
+    Play#1 output Play#1 1    2,-2   +      2%
+    Play#1 output Play#1 1    4,-2   +      0%
+    Play#1 output Play#1 1    6,-2   l    100%
+    Play#1 output Play#1 1   -1,-1   b    100%
+    Play#1 output Play#1 1    1,-1   m    100%
+    Play#1 output Play#1 1    3,-1   j    100%
+    Play#1 output Play#1 1    5,-1   h    100%
+    Play#1 output Play#1 1   -2,0    +      3%
+    Play#1 output Play#1 1    0,0    g    100%
+    Play#1 output Play#1 1    2,0    m    100%
+    Play#1 output Play#1 1    4,0    k    100%
+    Play#1 output Play#1 1   -1,1    +      0%
+    Play#1 output Play#1 1    1,1    g      0%
+    Play#1 output Play#1 1    3,1    +      1%
+    Play#1 output Play#1 1    5,1    +      0%
+    Play#1 output Play#1 1    7,1    +      3%
+    Play#1 output Play#1 1   -2,2    o    100%
+    Play#1 output Play#1 1    0,2    +      2%
+    Play#1 output Play#1 1    2,2    +      0%
+    Play#1 output Play#1 1    4,2    +      0%
+    Play#1 output Play#1 1    6,2    +      0%
+    Play#1 output Play#1 1    8,2    +      2%
+    Play#1 output Play#1 1   10,2    +      0%
+    Play#1 output Play#1 1   -1,3    +      0%
+    Play#1 output Play#1 1    1,3    +      1%
+    Play#1 output Play#1 1    5,3    +      2%
+    Play#1 output Play#1 1 30 sectors
+    Play#1 output Play#1 6 0 554
+    Play#1 input budget
+    Play#1 command budget
+    Play#1 output Play#1 1 Sector Type			Production			    Cost
+    Play#1 output Play#1 1 library/school   		101 edu    			     909
+    Play#1 output Play#1 1 Ship building			1 ship          		     480
+    Play#1 output Play#1 1 Ship maintenance		1 ship          		      36
+    Play#1 output Play#1 1 Sector building			24 sectors      		     221
+    Play#1 output Play#1 1 Sector maintenance		1 sector        		      60
+    Play#1 output Play#1 1 Military payroll		0 mil, 101 res                        50
+    Play#1 output Play#1 1 Total expenses......................................................1756
+    Play#1 output Play#1 1 Income from taxes		4235 civs, 229 uws                 +1824
+    Play#1 output Play#1 1 Income from bars		10 bars                             +150
+    Play#1 output Play#1 1 Total income.......................................................+1974
+    Play#1 output Play#1 1 Balance forward						           25813
+    Play#1 output Play#1 1 Estimated delta						            +218
+    Play#1 output Play#1 1 Estimated new treasury.............................................26031
+    Play#1 output Play#1 6 0 553
+    Play#1 input nation
+    Play#1 command nation
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 (#1) 1 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 Nation status is ACTIVE     Bureaucratic Time Units: 553
+    Play#1 output Play#1 1 0% eff capital at 0,-2 has 2 civilians & 0 military
+    Play#1 output Play#1 1  The treasury has $25813.00     Military reserves: 101
+    Play#1 output Play#1 1 Education..........  0.00       Happiness.......  0.00
+    Play#1 output Play#1 1 Technology.........  0.00       Research........  0.00
+    Play#1 output Play#1 1 Technology factor : 25.00%     Plague factor :   0.00%
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 Max population : 1000
+    Play#1 output Play#1 1 Max safe population for civs/uws: 769/869
+    Play#1 output Play#1 1 No happiness needed
+    Play#1 output Play#1 6 0 553
+    Play#1 input __cmd added 3 1 0
+    Play#1 command __cmd
+    Play#1 output Play#1 6 0 554
     Play#1 input ctld
     Play#1 output Play#1 1 Bye-bye
     Play#1 logout 1
@@ -2577,6 +2727,80 @@
     Play#1 output Play#1 1   -2,2    o  75%   306  114o 0.50 $0                                      114
     Play#1 output Play#1 1 9 sectors
     Play#1 output Play#1 6 0 544
+    Play#1 input neweff *
+    Play#1 command neweff
+    Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 EFFICIENCY SIMULATION
+    Play#1 output Play#1 1    sect  des    projected eff
+    Play#1 output Play#1 1    1,-3   +      2%
+    Play#1 output Play#1 1   -4,-2   +      4%
+    Play#1 output Play#1 1   -2,-2   +      2%
+    Play#1 output Play#1 1    0,-2   c      2%
+    Play#1 output Play#1 1    2,-2   +      3%
+    Play#1 output Play#1 1    4,-2   t    100%
+    Play#1 output Play#1 1    6,-2   l    100%
+    Play#1 output Play#1 1   -1,-1   b    100%
+    Play#1 output Play#1 1    1,-1   m    100%
+    Play#1 output Play#1 1    3,-1   j    100%
+    Play#1 output Play#1 1    5,-1   h    100%
+    Play#1 output Play#1 1   11,-1   )     19%
+    Play#1 output Play#1 1   -2,0    +    100%
+    Play#1 output Play#1 1    0,0    g    100%
+    Play#1 output Play#1 1    2,0    m    100%
+    Play#1 output Play#1 1    4,0    k    100%
+    Play#1 output Play#1 1   -1,1    +      0%
+    Play#1 output Play#1 1    1,1    g      0%
+    Play#1 output Play#1 1    3,1    +      3%
+    Play#1 output Play#1 1    5,1    +      0%
+    Play#1 output Play#1 1    7,1    +      4%
+    Play#1 output Play#1 1   -2,2    o    100%
+    Play#1 output Play#1 1    0,2    +      4%
+    Play#1 output Play#1 1    2,2    +      1%
+    Play#1 output Play#1 1    4,2    +      1%
+    Play#1 output Play#1 1    6,2    +      1%
+    Play#1 output Play#1 1    8,2    +      3%
+    Play#1 output Play#1 1   10,2    +      1%
+    Play#1 output Play#1 1   -1,3    +      0%
+    Play#1 output Play#1 1    1,3    +      2%
+    Play#1 output Play#1 1    5,3    +      4%
+    Play#1 output Play#1 1 31 sectors
+    Play#1 output Play#1 6 0 544
+    Play#1 input budget
+    Play#1 command budget
+    Play#1 output Play#1 1 Sector Type			Production			    Cost
+    Play#1 output Play#1 1 technical center 		5 tech   			    3000
+    Play#1 output Play#1 1 library/school   		144 edu    			    1296
+    Play#1 output Play#1 1 bank             		10 bars   			     100
+    Play#1 output Play#1 1 Ship maintenance		1 ship          		      36
+    Play#1 output Play#1 1 Sector building			21 sectors      		     215
+    Play#1 output Play#1 1 Sector maintenance		1 sector        		      60
+    Play#1 output Play#1 1 Military payroll		59 mil, 38 res                       316
+    Play#1 output Play#1 1 Total expenses......................................................5023
+    Play#1 output Play#1 1 Income from taxes		5229 civs, 263 uws                 +2218
+    Play#1 output Play#1 1 Income from bars		10 bars                             +150
+    Play#1 output Play#1 1 Total income.......................................................+2368
+    Play#1 output Play#1 1 Balance forward						           26031
+    Play#1 output Play#1 1 Estimated delta						           -2655
+    Play#1 output Play#1 1 Estimated new treasury.............................................23376
+    Play#1 output Play#1 6 0 543
+    Play#1 input nation
+    Play#1 command nation
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 (#1) 1 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 Nation status is ACTIVE     Bureaucratic Time Units: 543
+    Play#1 output Play#1 1 1% eff capital at 0,-2 has 2 civilians & 0 military
+    Play#1 output Play#1 1  The treasury has $26031.00     Military reserves: 38
+    Play#1 output Play#1 1 Education.......... 15.28       Happiness.......  0.00
+    Play#1 output Play#1 1 Technology.........  0.00       Research........  0.00
+    Play#1 output Play#1 1 Technology factor : 25.00%     Plague factor :   0.00%
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 Max population : 1000
+    Play#1 output Play#1 1 Max safe population for civs/uws: 769/869
+    Play#1 output Play#1 1 Happiness needed is 4.09
+    Play#1 output Play#1 6 0 543
+    Play#1 input __cmd added 3 1 0
+    Play#1 command __cmd
+    Play#1 output Play#1 6 0 544
     Play#1 input ctld
     Play#1 output Play#1 1 Bye-bye
     Play#1 logout 1
@@ -3026,6 +3250,80 @@
     Play#1 output Play#1 1    4,0    k 100%   598  171h 0.57 $0     598i            598i             171
     Play#1 output Play#1 1   -2,2    o  52%   399  118o 0.57 $0                                      118
     Play#1 output Play#1 1 9 sectors
+    Play#1 output Play#1 6 0 545
+    Play#1 input neweff *
+    Play#1 command neweff
+    Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 EFFICIENCY SIMULATION
+    Play#1 output Play#1 1    sect  des    projected eff
+    Play#1 output Play#1 1    1,-3   +      4%
+    Play#1 output Play#1 1   -4,-2   +      9%
+    Play#1 output Play#1 1   -2,-2   +      4%
+    Play#1 output Play#1 1    0,-2   c      3%
+    Play#1 output Play#1 1    2,-2   +      4%
+    Play#1 output Play#1 1    4,-2   t    100%
+    Play#1 output Play#1 1    6,-2   l    100%
+    Play#1 output Play#1 1   -1,-1   b    100%
+    Play#1 output Play#1 1    1,-1   m    100%
+    Play#1 output Play#1 1    3,-1   j    100%
+    Play#1 output Play#1 1    5,-1   h    100%
+    Play#1 output Play#1 1   11,-1   )     53%
+    Play#1 output Play#1 1   -2,0    +    100%
+    Play#1 output Play#1 1    0,0    g    100%
+    Play#1 output Play#1 1    2,0    m    100%
+    Play#1 output Play#1 1    4,0    k    100%
+    Play#1 output Play#1 1   -1,1    +      0%
+    Play#1 output Play#1 1    1,1    g     56%
+    Play#1 output Play#1 1    3,1    +      4%
+    Play#1 output Play#1 1    5,1    +      0%
+    Play#1 output Play#1 1    7,1    +      7%
+    Play#1 output Play#1 1   -2,2    o    100%
+    Play#1 output Play#1 1    0,2    +      5%
+    Play#1 output Play#1 1    2,2    +      3%
+    Play#1 output Play#1 1    4,2    +      3%
+    Play#1 output Play#1 1    6,2    +      3%
+    Play#1 output Play#1 1    8,2    +      5%
+    Play#1 output Play#1 1   10,2    +      3%
+    Play#1 output Play#1 1   -1,3    +      0%
+    Play#1 output Play#1 1    1,3    +      3%
+    Play#1 output Play#1 1    5,3    +      5%
+    Play#1 output Play#1 1 31 sectors
+    Play#1 output Play#1 6 0 545
+    Play#1 input budget
+    Play#1 command budget
+    Play#1 output Play#1 1 Sector Type			Production			    Cost
+    Play#1 output Play#1 1 technical center 		7 tech   			    3000
+    Play#1 output Play#1 1 library/school   		150 edu    			    1350
+    Play#1 output Play#1 1 bank             		10 bars   			     100
+    Play#1 output Play#1 1 Ship maintenance		1 ship          		      36
+    Play#1 output Play#1 1 Sector building			20 sectors      		     116
+    Play#1 output Play#1 1 Sector maintenance		1 sector        		      60
+    Play#1 output Play#1 1 Military payroll		59 mil, 37 res                       316
+    Play#1 output Play#1 1 Total expenses......................................................4978
+    Play#1 output Play#1 1 Income from taxes		6799 civs, 302 uws                 +3286
+    Play#1 output Play#1 1 Income from bars		20 bars                             +300
+    Play#1 output Play#1 1 Total income.......................................................+3586
+    Play#1 output Play#1 1 Balance forward						           23375
+    Play#1 output Play#1 1 Estimated delta						           -1392
+    Play#1 output Play#1 1 Estimated new treasury.............................................21983
+    Play#1 output Play#1 6 0 544
+    Play#1 input nation
+    Play#1 command nation
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 (#1) 1 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 Nation status is ACTIVE     Bureaucratic Time Units: 544
+    Play#1 output Play#1 1 2% eff capital at 0,-2 has 3 civilians & 0 military
+    Play#1 output Play#1 1  The treasury has $23375.00     Military reserves: 37
+    Play#1 output Play#1 1 Education.......... 28.87       Happiness.......  0.00
+    Play#1 output Play#1 1 Technology.........  3.32       Research........  0.00
+    Play#1 output Play#1 1 Technology factor : 26.22%     Plague factor :   0.00%
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 Max population : 1000
+    Play#1 output Play#1 1 Max safe population for civs/uws: 769/869
+    Play#1 output Play#1 1 Happiness needed is 8.71
+    Play#1 output Play#1 6 0 544
+    Play#1 input __cmd added 3 1 0
+    Play#1 command __cmd
     Play#1 output Play#1 6 0 545
     Play#1 input ctld
     Play#1 output Play#1 1 Bye-bye
@@ -3554,6 +3852,80 @@
     Play#1 output Play#1 1   -2,2    o  31%   483   94o 0.63 $0                                       94
     Play#1 output Play#1 1 11 sectors
     Play#1 output Play#1 6 0 515
+    Play#1 input neweff *
+    Play#1 command neweff
+    Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 EFFICIENCY SIMULATION
+    Play#1 output Play#1 1    sect  des    projected eff
+    Play#1 output Play#1 1    1,-3   +      5%
+    Play#1 output Play#1 1   -4,-2   +     14%
+    Play#1 output Play#1 1   -2,-2   +      5%
+    Play#1 output Play#1 1    0,-2   c      5%
+    Play#1 output Play#1 1    2,-2   +      5%
+    Play#1 output Play#1 1    4,-2   t    100%
+    Play#1 output Play#1 1    6,-2   l    100%
+    Play#1 output Play#1 1   -1,-1   b    100%
+    Play#1 output Play#1 1    1,-1   m    100%
+    Play#1 output Play#1 1    3,-1   j    100%
+    Play#1 output Play#1 1    5,-1   h    100%
+    Play#1 output Play#1 1   11,-1   )    100%
+    Play#1 output Play#1 1   -2,0    j    100%
+    Play#1 output Play#1 1    0,0    m    100%
+    Play#1 output Play#1 1    2,0    m    100%
+    Play#1 output Play#1 1    4,0    k    100%
+    Play#1 output Play#1 1   -1,1    +      1%
+    Play#1 output Play#1 1    1,1    g    100%
+    Play#1 output Play#1 1    3,1    g      0%
+    Play#1 output Play#1 1    5,1    +      0%
+    Play#1 output Play#1 1    7,1    +     12%
+    Play#1 output Play#1 1   -2,2    o    100%
+    Play#1 output Play#1 1    0,2    g     18%
+    Play#1 output Play#1 1    2,2    g      2%
+    Play#1 output Play#1 1    4,2    +      4%
+    Play#1 output Play#1 1    6,2    +      6%
+    Play#1 output Play#1 1    8,2    +      6%
+    Play#1 output Play#1 1   10,2    +      4%
+    Play#1 output Play#1 1   -1,3    +      1%
+    Play#1 output Play#1 1    1,3    +      5%
+    Play#1 output Play#1 1    5,3    +      8%
+    Play#1 output Play#1 1 31 sectors
+    Play#1 output Play#1 6 0 515
+    Play#1 input budget
+    Play#1 command budget
+    Play#1 output Play#1 1 Sector Type			Production			    Cost
+    Play#1 output Play#1 1 technical center 		8 tech   			    3000
+    Play#1 output Play#1 1 library/school   		150 edu    			    1350
+    Play#1 output Play#1 1 bank             		10 bars   			     100
+    Play#1 output Play#1 1 Ship maintenance		1 ship          		      36
+    Play#1 output Play#1 1 Sector building			22 sectors      		     400
+    Play#1 output Play#1 1 Sector maintenance		1 sector        		      60
+    Play#1 output Play#1 1 Military payroll		51 mil, 36 res                       275
+    Play#1 output Play#1 1 Total expenses......................................................5221
+    Play#1 output Play#1 1 Income from taxes		8759 civs, 423 uws                 +4172
+    Play#1 output Play#1 1 Income from bars		30 bars                             +450
+    Play#1 output Play#1 1 Total income.......................................................+4622
+    Play#1 output Play#1 1 Balance forward						           21911
+    Play#1 output Play#1 1 Estimated delta						            -599
+    Play#1 output Play#1 1 Estimated new treasury.............................................21312
+    Play#1 output Play#1 6 0 514
+    Play#1 input nation
+    Play#1 command nation
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 (#1) 1 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 Nation status is ACTIVE     Bureaucratic Time Units: 514
+    Play#1 output Play#1 1 3% eff capital at 0,-2 has 4 civilians & 0 military
+    Play#1 output Play#1 1  The treasury has $21911.00     Military reserves: 36
+    Play#1 output Play#1 1 Education.......... 36.51       Happiness.......  0.00
+    Play#1 output Play#1 1 Technology.........  7.09       Research........  0.00
+    Play#1 output Play#1 1 Technology factor : 27.57%     Plague factor :   0.00%
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 Max population : 1000
+    Play#1 output Play#1 1 Max safe population for civs/uws: 769/869
+    Play#1 output Play#1 1 Happiness needed is 11.35
+    Play#1 output Play#1 6 0 514
+    Play#1 input __cmd added 3 1 0
+    Play#1 command __cmd
+    Play#1 output Play#1 6 0 515
     Play#1 input ctld
     Play#1 output Play#1 1 Bye-bye
     Play#1 logout 1
@@ -3780,6 +4152,72 @@
     Play#8 output Play#8 1    sect  des eff avail  make p.e. cost   use1 use2 use3  max1 max2 max3   max
     Play#8 output Play#8 1    1,-1   g   0%   650    0d 1.00 $0                                        0
     Play#8 output Play#8 1 1 sector
+    Play#8 output Play#8 6 0 614
+    Play#8 input neweff *
+    Play#8 command neweff
+    Play#8 output Play#8 1 Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 EFFICIENCY SIMULATION
+    Play#8 output Play#8 1    sect  des    projected eff
+    Play#8 output Play#8 1   -6,-4   -      0%
+    Play#8 output Play#8 1   -4,-4   -      0%
+    Play#8 output Play#8 1    0,-4   -      0%
+    Play#8 output Play#8 1   -5,-3   -      0%
+    Play#8 output Play#8 1   -3,-3   -      0%
+    Play#8 output Play#8 1   -1,-3   -      0%
+    Play#8 output Play#8 1    1,-3   -      0%
+    Play#8 output Play#8 1   -4,-2   -      0%
+    Play#8 output Play#8 1   -2,-2   -      0%
+    Play#8 output Play#8 1    0,-2   -      0%
+    Play#8 output Play#8 1    2,-2   -      0%
+    Play#8 output Play#8 1    4,-2   -      0%
+    Play#8 output Play#8 1    6,-2   -      0%
+    Play#8 output Play#8 1   -3,-1   -      0%
+    Play#8 output Play#8 1   -1,-1   -      0%
+    Play#8 output Play#8 1    1,-1   g    100%
+    Play#8 output Play#8 1    3,-1   -      0%
+    Play#8 output Play#8 1    5,-1   -      0%
+    Play#8 output Play#8 1    7,-1   -      0%
+    Play#8 output Play#8 1   -2,0    -      0%
+    Play#8 output Play#8 1    0,0    c    100%
+    Play#8 output Play#8 1    2,0    c    100%
+    Play#8 output Play#8 1    4,0    -      0%
+    Play#8 output Play#8 1    6,0    -      0%
+    Play#8 output Play#8 1    8,0    -      0%
+    Play#8 output Play#8 1   -3,1    -      0%
+    Play#8 output Play#8 1   -1,1    -      0%
+    Play#8 output Play#8 1    1,1    -      0%
+    Play#8 output Play#8 1    3,1    -      0%
+    Play#8 output Play#8 1 29 sectors
+    Play#8 output Play#8 6 0 614
+    Play#8 input budget
+    Play#8 command budget
+    Play#8 output Play#8 1 Sector Type			Production			    Cost
+    Play#8 output Play#8 1 Sector maintenance		2 sectors       		     120
+    Play#8 output Play#8 1 Military payroll		109 mil, 0 res                       548
+    Play#8 output Play#8 1 Total expenses.......................................................668
+    Play#8 output Play#8 1 Income from taxes		2995 civs, 340 uws                 +1519
+    Play#8 output Play#8 1 Total income.......................................................+1519
+    Play#8 output Play#8 1 Balance forward						           28067
+    Play#8 output Play#8 1 Estimated delta						            +851
+    Play#8 output Play#8 1 Estimated new treasury.............................................28918
+    Play#8 output Play#8 6 0 613
+    Play#8 input nation
+    Play#8 command nation
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 (#8) 8 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 Nation status is ACTIVE     Bureaucratic Time Units: 613
+    Play#8 output Play#8 1 100% eff capital at 0,0 has 983 civilians & 55 military
+    Play#8 output Play#8 1  The treasury has $28067.00     Military reserves: 0
+    Play#8 output Play#8 1 Education..........  0.00       Happiness.......  0.00
+    Play#8 output Play#8 1 Technology.........  3.55       Research........  0.00
+    Play#8 output Play#8 1 Technology factor : 26.31%     Plague factor :   0.00%
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 Max population : 1000
+    Play#8 output Play#8 1 Max safe population for civs/uws: 769/869
+    Play#8 output Play#8 1 No happiness needed
+    Play#8 output Play#8 6 0 613
+    Play#8 input __cmd added 3 1 0
+    Play#8 command __cmd
     Play#8 output Play#8 6 0 614
     Play#8 input ctld
     Play#8 output Play#8 1 Bye-bye
@@ -4458,6 +4896,81 @@
     Play#1 output Play#1 1    2,2    g  56%   504  280d 1.00 $0                                      280
     Play#1 output Play#1 1 14 sectors
     Play#1 output Play#1 6 0 521
+    Play#1 input neweff *
+    Play#1 command neweff
+    Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 EFFICIENCY SIMULATION
+    Play#1 output Play#1 1    sect  des    projected eff
+    Play#1 output Play#1 1    1,-3   o      0%
+    Play#1 output Play#1 1   -4,-2   o      0%
+    Play#1 output Play#1 1   -2,-2   o      0%
+    Play#1 output Play#1 1    0,-2   c     44%
+    Play#1 output Play#1 1    2,-2   +      6%
+    Play#1 output Play#1 1    4,-2   t    100%
+    Play#1 output Play#1 1    6,-2   l    100%
+    Play#1 output Play#1 1   -1,-1   b    100%
+    Play#1 output Play#1 1    1,-1   m    100%
+    Play#1 output Play#1 1    3,-1   j    100%
+    Play#1 output Play#1 1    5,-1   h    100%
+    Play#1 output Play#1 1    7,-1   =     50%
+    Play#1 output Play#1 1   11,-1   )    100%
+    Play#1 output Play#1 1   -2,0    j    100%
+    Play#1 output Play#1 1    0,0    m    100%
+    Play#1 output Play#1 1    2,0    m    100%
+    Play#1 output Play#1 1    4,0    k    100%
+    Play#1 output Play#1 1   -1,1    k      1%
+    Play#1 output Play#1 1    1,1    m    100%
+    Play#1 output Play#1 1    3,1    g    100%
+    Play#1 output Play#1 1    5,1    +      1%
+    Play#1 output Play#1 1    7,1    +     17%
+    Play#1 output Play#1 1   -2,2    o    100%
+    Play#1 output Play#1 1    0,2    g    100%
+    Play#1 output Play#1 1    2,2    g    100%
+    Play#1 output Play#1 1    4,2    g      0%
+    Play#1 output Play#1 1    6,2    g      1%
+    Play#1 output Play#1 1    8,2    g      0%
+    Play#1 output Play#1 1   10,2    +      9%
+    Play#1 output Play#1 1   -1,3    +      2%
+    Play#1 output Play#1 1    1,3    +      6%
+    Play#1 output Play#1 1    5,3    +     13%
+    Play#1 output Play#1 1 32 sectors
+    Play#1 output Play#1 6 0 521
+    Play#1 input budget
+    Play#1 command budget
+    Play#1 output Play#1 1 Sector Type			Production			    Cost
+    Play#1 output Play#1 1 technical center 		8 tech   			    3000
+    Play#1 output Play#1 1 library/school   		150 edu    			    1350
+    Play#1 output Play#1 1 bank             		25 bars   			     250
+    Play#1 output Play#1 1 Ship maintenance		1 ship          		      36
+    Play#1 output Play#1 1 Sector building			20 sectors      		     507
+    Play#1 output Play#1 1 Sector maintenance		1 sector        		      60
+    Play#1 output Play#1 1 Military payroll		51 mil, 35 res                       275
+    Play#1 output Play#1 1 Total expenses......................................................5478
+    Play#1 output Play#1 1 Income from taxes		10808 civs, 487 uws                +4246
+    Play#1 output Play#1 1 Income from bars		40 bars                             +600
+    Play#1 output Play#1 1 Total income.......................................................+4846
+    Play#1 output Play#1 1 Balance forward						           20313
+    Play#1 output Play#1 1 Estimated delta						            -632
+    Play#1 output Play#1 1 Estimated new treasury.............................................19681
+    Play#1 output Play#1 6 0 520
+    Play#1 input nation
+    Play#1 command nation
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 (#1) 1 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 Nation status is ACTIVE     Bureaucratic Time Units: 520
+    Play#1 output Play#1 1 4% eff capital at 0,-2 has 100 civilians & 0 military
+    Play#1 output Play#1 1  The treasury has $20313.00     Military reserves: 35
+    Play#1 output Play#1 1 Education.......... 39.72       Happiness.......  0.00
+    Play#1 output Play#1 1 Technology......... 10.95       Research........  0.00
+    Play#1 output Play#1 1 Technology factor : 28.89%     Plague factor :   0.00%
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 Max population : 1000
+    Play#1 output Play#1 1 Max safe population for civs/uws: 769/869
+    Play#1 output Play#1 1 Happiness needed is 12.51
+    Play#1 output Play#1 6 0 520
+    Play#1 input __cmd added 3 1 0
+    Play#1 command __cmd
+    Play#1 output Play#1 6 0 521
     Play#1 input ctld
     Play#1 output Play#1 1 Bye-bye
     Play#1 logout 1
@@ -4749,6 +5262,73 @@
     Play#8 output Play#8 1    2,0    g 100%   621  500d 1.00 $0                                      500
     Play#8 output Play#8 1    4,0    g  14%   261   36d 1.00 $0                                       36
     Play#8 output Play#8 1 5 sectors
+    Play#8 output Play#8 6 0 619
+    Play#8 input neweff *
+    Play#8 command neweff
+    Play#8 output Play#8 1 Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 EFFICIENCY SIMULATION
+    Play#8 output Play#8 1    sect  des    projected eff
+    Play#8 output Play#8 1   -6,-4   o      0%
+    Play#8 output Play#8 1   -4,-4   -      0%
+    Play#8 output Play#8 1    0,-4   -      0%
+    Play#8 output Play#8 1   -5,-3   o      0%
+    Play#8 output Play#8 1   -3,-3   -      0%
+    Play#8 output Play#8 1   -1,-3   g      0%
+    Play#8 output Play#8 1    1,-3   g      0%
+    Play#8 output Play#8 1   -4,-2   g      0%
+    Play#8 output Play#8 1   -2,-2   g      0%
+    Play#8 output Play#8 1    0,-2   g      0%
+    Play#8 output Play#8 1    2,-2   g      0%
+    Play#8 output Play#8 1    4,-2   -      0%
+    Play#8 output Play#8 1    6,-2   g      0%
+    Play#8 output Play#8 1   -3,-1   g      0%
+    Play#8 output Play#8 1   -1,-1   g      0%
+    Play#8 output Play#8 1    1,-1   m    100%
+    Play#8 output Play#8 1    3,-1   g     90%
+    Play#8 output Play#8 1    5,-1   g      0%
+    Play#8 output Play#8 1    7,-1   c      0%
+    Play#8 output Play#8 1   -2,0    g      0%
+    Play#8 output Play#8 1    0,0    g    100%
+    Play#8 output Play#8 1    2,0    g    100%
+    Play#8 output Play#8 1    4,0    g    100%
+    Play#8 output Play#8 1    6,0    g      0%
+    Play#8 output Play#8 1    8,0    -      0%
+    Play#8 output Play#8 1   -3,1    g      0%
+    Play#8 output Play#8 1   -1,1    -      0%
+    Play#8 output Play#8 1    1,1    g      0%
+    Play#8 output Play#8 1    3,1    w      0%
+    Play#8 output Play#8 1 29 sectors
+    Play#8 output Play#8 6 0 619
+    Play#8 input budget
+    Play#8 command budget
+    Play#8 output Play#8 1 Sector Type			Production			    Cost
+    Play#8 output Play#8 1 Sector building			29 sectors      		     565
+    Play#8 output Play#8 1 Sector maintenance		3 sectors       		     180
+    Play#8 output Play#8 1 Military payroll		109 mil, 0 res                       548
+    Play#8 output Play#8 1 Total expenses......................................................1293
+    Play#8 output Play#8 1 Income from taxes		3033 civs, 391 uws                 +1194
+    Play#8 output Play#8 1 Total income.......................................................+1194
+    Play#8 output Play#8 1 Balance forward						           28918
+    Play#8 output Play#8 1 Estimated delta						             -99
+    Play#8 output Play#8 1 Estimated new treasury.............................................28819
+    Play#8 output Play#8 6 0 618
+    Play#8 input nation
+    Play#8 command nation
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 (#8) 8 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 Nation status is ACTIVE     Bureaucratic Time Units: 618
+    Play#8 output Play#8 1 0% eff capital at 7,-1 has 1 civilian & 0 military
+    Play#8 output Play#8 1  The treasury has $28918.00     Military reserves: 0
+    Play#8 output Play#8 1 Education..........  0.00       Happiness.......  0.00
+    Play#8 output Play#8 1 Technology.........  5.47       Research........  0.00
+    Play#8 output Play#8 1 Technology factor : 27.00%     Plague factor :   0.00%
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 Max population : 1000
+    Play#8 output Play#8 1 Max safe population for civs/uws: 769/869
+    Play#8 output Play#8 1 No happiness needed
+    Play#8 output Play#8 6 0 618
+    Play#8 input __cmd added 3 1 0
+    Play#8 command __cmd
     Play#8 output Play#8 6 0 619
     Play#8 input ctld
     Play#8 output Play#8 1 Bye-bye
@@ -5336,6 +5916,81 @@
     Play#1 output Play#1 1    4,2    g  51%   473  241d 1.00 $0                                      241
     Play#1 output Play#1 1 19 sectors
     Play#1 output Play#1 6 0 618
+    Play#1 input neweff *
+    Play#1 command neweff
+    Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 EFFICIENCY SIMULATION
+    Play#1 output Play#1 1    sect  des    projected eff
+    Play#1 output Play#1 1    1,-3   o    100%
+    Play#1 output Play#1 1   -4,-2   o    100%
+    Play#1 output Play#1 1   -2,-2   o    100%
+    Play#1 output Play#1 1    0,-2   c    100%
+    Play#1 output Play#1 1    2,-2   +      7%
+    Play#1 output Play#1 1    4,-2   t    100%
+    Play#1 output Play#1 1    6,-2   l    100%
+    Play#1 output Play#1 1   -1,-1   b    100%
+    Play#1 output Play#1 1    1,-1   m    100%
+    Play#1 output Play#1 1    3,-1   j    100%
+    Play#1 output Play#1 1    5,-1   h    100%
+    Play#1 output Play#1 1    7,-1   =     94%
+    Play#1 output Play#1 1   11,-1   )    100%
+    Play#1 output Play#1 1   -2,0    j    100%
+    Play#1 output Play#1 1    0,0    m    100%
+    Play#1 output Play#1 1    2,0    m    100%
+    Play#1 output Play#1 1    4,0    k    100%
+    Play#1 output Play#1 1   -1,1    k    100%
+    Play#1 output Play#1 1    1,1    m    100%
+    Play#1 output Play#1 1    3,1    m    100%
+    Play#1 output Play#1 1    5,1    g      2%
+    Play#1 output Play#1 1    7,1    g      0%
+    Play#1 output Play#1 1   -2,2    o    100%
+    Play#1 output Play#1 1    0,2    m    100%
+    Play#1 output Play#1 1    2,2    k    100%
+    Play#1 output Play#1 1    4,2    g    100%
+    Play#1 output Play#1 1    6,2    g      5%
+    Play#1 output Play#1 1    8,2    g      4%
+    Play#1 output Play#1 1   10,2    g      0%
+    Play#1 output Play#1 1   -1,3    +      4%
+    Play#1 output Play#1 1    1,3    +     11%
+    Play#1 output Play#1 1    5,3    +     18%
+    Play#1 output Play#1 1 32 sectors
+    Play#1 output Play#1 6 0 618
+    Play#1 input budget
+    Play#1 command budget
+    Play#1 output Play#1 1 Sector Type			Production			    Cost
+    Play#1 output Play#1 1 technical center 		8 tech   			    3000
+    Play#1 output Play#1 1 library/school   		150 edu    			    1350
+    Play#1 output Play#1 1 bank             		16 bars   			     160
+    Play#1 output Play#1 1 Ship maintenance		1 ship          		      36
+    Play#1 output Play#1 1 Sector building			19 sectors      		    1005
+    Play#1 output Play#1 1 Sector maintenance		1 sector        		      60
+    Play#1 output Play#1 1 Military payroll		51 mil, 34 res                       274
+    Play#1 output Play#1 1 Total expenses......................................................5885
+    Play#1 output Play#1 1 Income from taxes		13260 civs, 560 uws                +4689
+    Play#1 output Play#1 1 Income from bars		65 bars                             +975
+    Play#1 output Play#1 1 Total income.......................................................+5664
+    Play#1 output Play#1 1 Balance forward						           19680
+    Play#1 output Play#1 1 Estimated delta						            -221
+    Play#1 output Play#1 1 Estimated new treasury.............................................19459
+    Play#1 output Play#1 6 0 617
+    Play#1 input nation
+    Play#1 command nation
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 (#1) 1 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 Nation status is ACTIVE     Bureaucratic Time Units: 617
+    Play#1 output Play#1 1 44% eff capital at 0,-2 has 100 civilians & 0 military
+    Play#1 output Play#1 1  The treasury has $19680.00     Military reserves: 34
+    Play#1 output Play#1 1 Education.......... 40.44       Happiness.......  0.00
+    Play#1 output Play#1 1 Technology......... 14.81       Research........  0.00
+    Play#1 output Play#1 1 Technology factor : 30.17%     Plague factor :   0.00%
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 Max population : 1000
+    Play#1 output Play#1 1 Max safe population for civs/uws: 769/869
+    Play#1 output Play#1 1 Happiness needed is 12.85
+    Play#1 output Play#1 6 0 617
+    Play#1 input __cmd added 3 1 0
+    Play#1 command __cmd
+    Play#1 output Play#1 6 0 618
     Play#1 input ctld
     Play#1 output Play#1 1 Bye-bye
     Play#1 logout 1
@@ -5457,6 +6112,73 @@
     Play#8 output Play#8 1    2,0    m 100%   641  641i 1.00 $0                                      641
     Play#8 output Play#8 1    4,0    g   7%   277   19d 1.00 $0                                       19
     Play#8 output Play#8 1 5 sectors
+    Play#8 output Play#8 6 0 616
+    Play#8 input neweff *
+    Play#8 command neweff
+    Play#8 output Play#8 1 Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 EFFICIENCY SIMULATION
+    Play#8 output Play#8 1    sect  des    projected eff
+    Play#8 output Play#8 1   -6,-4   o      1%
+    Play#8 output Play#8 1   -4,-4   -      1%
+    Play#8 output Play#8 1    0,-4   -      0%
+    Play#8 output Play#8 1   -5,-3   o      0%
+    Play#8 output Play#8 1   -3,-3   -      0%
+    Play#8 output Play#8 1   -1,-3   g      0%
+    Play#8 output Play#8 1    1,-3   g      0%
+    Play#8 output Play#8 1   -4,-2   g      1%
+    Play#8 output Play#8 1   -2,-2   g      1%
+    Play#8 output Play#8 1    0,-2   g      1%
+    Play#8 output Play#8 1    2,-2   g      0%
+    Play#8 output Play#8 1    4,-2   -      0%
+    Play#8 output Play#8 1    6,-2   g      0%
+    Play#8 output Play#8 1   -3,-1   g      0%
+    Play#8 output Play#8 1   -1,-1   g      0%
+    Play#8 output Play#8 1    1,-1   m    100%
+    Play#8 output Play#8 1    3,-1   g    100%
+    Play#8 output Play#8 1    5,-1   g      0%
+    Play#8 output Play#8 1    7,-1   c      0%
+    Play#8 output Play#8 1   -2,0    g      0%
+    Play#8 output Play#8 1    0,0    m    100%
+    Play#8 output Play#8 1    2,0    m    100%
+    Play#8 output Play#8 1    4,0    g    100%
+    Play#8 output Play#8 1    6,0    g      0%
+    Play#8 output Play#8 1    8,0    -      0%
+    Play#8 output Play#8 1   -3,1    g      0%
+    Play#8 output Play#8 1   -1,1    -      0%
+    Play#8 output Play#8 1    1,1    g      1%
+    Play#8 output Play#8 1    3,1    w    100%
+    Play#8 output Play#8 1 29 sectors
+    Play#8 output Play#8 6 0 616
+    Play#8 input budget
+    Play#8 command budget
+    Play#8 output Play#8 1 Sector Type			Production			    Cost
+    Play#8 output Play#8 1 Sector building			27 sectors      		     365
+    Play#8 output Play#8 1 Sector maintenance		1 sector        		      60
+    Play#8 output Play#8 1 Military payroll		109 mil, 0 res                       548
+    Play#8 output Play#8 1 Total expenses.......................................................973
+    Play#8 output Play#8 1 Income from taxes		3949 civs, 450 uws                 +1721
+    Play#8 output Play#8 1 Total income.......................................................+1721
+    Play#8 output Play#8 1 Balance forward						           28819
+    Play#8 output Play#8 1 Estimated delta						            +748
+    Play#8 output Play#8 1 Estimated new treasury.............................................29567
+    Play#8 output Play#8 6 0 615
+    Play#8 input nation
+    Play#8 command nation
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 (#8) 8 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 Nation status is ACTIVE     Bureaucratic Time Units: 615
+    Play#8 output Play#8 1 0% eff capital at 7,-1 has 1 civilian & 0 military
+    Play#8 output Play#8 1  The treasury has $28819.00     Military reserves: 0
+    Play#8 output Play#8 1 Education..........  0.00       Happiness.......  0.00
+    Play#8 output Play#8 1 Technology.........  7.41       Research........  0.00
+    Play#8 output Play#8 1 Technology factor : 27.68%     Plague factor :   0.00%
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 Max population : 1000
+    Play#8 output Play#8 1 Max safe population for civs/uws: 769/869
+    Play#8 output Play#8 1 No happiness needed
+    Play#8 output Play#8 6 0 615
+    Play#8 input __cmd added 3 1 0
+    Play#8 command __cmd
     Play#8 output Play#8 6 0 616
     Play#8 input ctld
     Play#8 output Play#8 1 Bye-bye
@@ -6017,6 +6739,81 @@
     Play#1 output Play#1 1   10,2    g  28%   502  140d 1.00 $0                                      140
     Play#1 output Play#1 1 24 sectors
     Play#1 output Play#1 6 0 631
+    Play#1 input neweff *
+    Play#1 command neweff
+    Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 EFFICIENCY SIMULATION
+    Play#1 output Play#1 1    sect  des    projected eff
+    Play#1 output Play#1 1    1,-3   o    100%
+    Play#1 output Play#1 1   -4,-2   o    100%
+    Play#1 output Play#1 1   -2,-2   o    100%
+    Play#1 output Play#1 1    0,-2   c    100%
+    Play#1 output Play#1 1    2,-2   +      8%
+    Play#1 output Play#1 1    4,-2   t    100%
+    Play#1 output Play#1 1    6,-2   l    100%
+    Play#1 output Play#1 1   -1,-1   b    100%
+    Play#1 output Play#1 1    1,-1   m    100%
+    Play#1 output Play#1 1    3,-1   j    100%
+    Play#1 output Play#1 1    5,-1   h    100%
+    Play#1 output Play#1 1    7,-1   =    100%
+    Play#1 output Play#1 1   11,-1   )    100%
+    Play#1 output Play#1 1   -2,0    j    100%
+    Play#1 output Play#1 1    0,0    m    100%
+    Play#1 output Play#1 1    2,0    m    100%
+    Play#1 output Play#1 1    4,0    k    100%
+    Play#1 output Play#1 1   -1,1    k    100%
+    Play#1 output Play#1 1    1,1    m    100%
+    Play#1 output Play#1 1    3,1    m    100%
+    Play#1 output Play#1 1    5,1    g    100%
+    Play#1 output Play#1 1    7,1    g    100%
+    Play#1 output Play#1 1   -2,2    i    100%
+    Play#1 output Play#1 1    0,2    m    100%
+    Play#1 output Play#1 1    2,2    k    100%
+    Play#1 output Play#1 1    4,2    g    100%
+    Play#1 output Play#1 1    6,2    g    100%
+    Play#1 output Play#1 1    8,2    g    100%
+    Play#1 output Play#1 1   10,2    g    100%
+    Play#1 output Play#1 1   -1,3    +      5%
+    Play#1 output Play#1 1    1,3    +     16%
+    Play#1 output Play#1 1    5,3    +     27%
+    Play#1 output Play#1 1 32 sectors
+    Play#1 output Play#1 6 0 631
+    Play#1 input budget
+    Play#1 command budget
+    Play#1 output Play#1 1 Sector Type			Production			    Cost
+    Play#1 output Play#1 1 technical center 		12 tech   			    4500
+    Play#1 output Play#1 1 library/school   		150 edu    			    1350
+    Play#1 output Play#1 1 bank             		15 bars   			     150
+    Play#1 output Play#1 1 Ship maintenance		1 ship          		      36
+    Play#1 output Play#1 1 Sector building			11 sectors      		     640
+    Play#1 output Play#1 1 Sector maintenance		1 sector        		      60
+    Play#1 output Play#1 1 Military payroll		51 mil, 33 res                       274
+    Play#1 output Play#1 1 Total expenses......................................................7010
+    Play#1 output Play#1 1 Income from taxes		17205 civs, 645 uws                +6758
+    Play#1 output Play#1 1 Income from bars		81 bars                            +1215
+    Play#1 output Play#1 1 Total income.......................................................+7973
+    Play#1 output Play#1 1 Balance forward						           19475
+    Play#1 output Play#1 1 Estimated delta						            +963
+    Play#1 output Play#1 1 Estimated new treasury.............................................20438
+    Play#1 output Play#1 6 0 630
+    Play#1 input nation
+    Play#1 command nation
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 (#1) 1 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 Nation status is ACTIVE     Bureaucratic Time Units: 630
+    Play#1 output Play#1 1 100% eff capital at 0,-2 has 100 civilians & 0 military
+    Play#1 output Play#1 1  The treasury has $19475.00     Military reserves: 33
+    Play#1 output Play#1 1 Education.......... 39.56       Happiness.......  0.00
+    Play#1 output Play#1 1 Technology......... 18.66       Research........  0.00
+    Play#1 output Play#1 1 Technology factor : 31.40%     Plague factor :   0.00%
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 Max population : 1000
+    Play#1 output Play#1 1 Max safe population for civs/uws: 769/869
+    Play#1 output Play#1 1 Happiness needed is 12.65
+    Play#1 output Play#1 6 0 630
+    Play#1 input __cmd added 3 1 0
+    Play#1 command __cmd
+    Play#1 output Play#1 6 0 631
     Play#1 input ctld
     Play#1 output Play#1 1 Bye-bye
     Play#1 logout 1
@@ -6196,6 +6993,74 @@
     Play#8 output Play#8 1    2,0    m 100%   789  789i 1.00 $0                                      789
     Play#8 output Play#8 1    4,0    b 100%   148   11b 1.00 $110    55d            145d              29
     Play#8 output Play#8 1 7 sectors
+    Play#8 output Play#8 6 0 602
+    Play#8 input neweff *
+    Play#8 command neweff
+    Play#8 output Play#8 1 Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 EFFICIENCY SIMULATION
+    Play#8 output Play#8 1    sect  des    projected eff
+    Play#8 output Play#8 1   -6,-4   o      3%
+    Play#8 output Play#8 1   -4,-4   -      3%
+    Play#8 output Play#8 1    0,-4   -      0%
+    Play#8 output Play#8 1   -5,-3   o      1%
+    Play#8 output Play#8 1   -3,-3   -      0%
+    Play#8 output Play#8 1   -1,-3   g      1%
+    Play#8 output Play#8 1    1,-3   g      1%
+    Play#8 output Play#8 1   -4,-2   g      3%
+    Play#8 output Play#8 1   -2,-2   g      3%
+    Play#8 output Play#8 1    0,-2   g      2%
+    Play#8 output Play#8 1    2,-2   g      1%
+    Play#8 output Play#8 1    4,-2   -      0%
+    Play#8 output Play#8 1    6,-2   g      0%
+    Play#8 output Play#8 1   -3,-1   g    100%
+    Play#8 output Play#8 1   -1,-1   g    100%
+    Play#8 output Play#8 1    1,-1   m    100%
+    Play#8 output Play#8 1    3,-1   m    100%
+    Play#8 output Play#8 1    5,-1   g      1%
+    Play#8 output Play#8 1    7,-1   c      0%
+    Play#8 output Play#8 1   -2,0    g      1%
+    Play#8 output Play#8 1    0,0    m    100%
+    Play#8 output Play#8 1    2,0    m    100%
+    Play#8 output Play#8 1    4,0    b    100%
+    Play#8 output Play#8 1    6,0    g      1%
+    Play#8 output Play#8 1    8,0    -      1%
+    Play#8 output Play#8 1   -3,1    g      0%
+    Play#8 output Play#8 1   -1,1    -      0%
+    Play#8 output Play#8 1    1,1    g      2%
+    Play#8 output Play#8 1    3,1    w    100%
+    Play#8 output Play#8 1 29 sectors
+    Play#8 output Play#8 6 0 602
+    Play#8 input budget
+    Play#8 command budget
+    Play#8 output Play#8 1 Sector Type			Production			    Cost
+    Play#8 output Play#8 1 bank             		11 bars   			     110
+    Play#8 output Play#8 1 Sector building			25 sectors      		     462
+    Play#8 output Play#8 1 Sector maintenance		1 sector        		      60
+    Play#8 output Play#8 1 Military payroll		109 mil, 0 res                       548
+    Play#8 output Play#8 1 Total expenses......................................................1180
+    Play#8 output Play#8 1 Income from taxes		5135 civs, 517 uws                 +1825
+    Play#8 output Play#8 1 Total income.......................................................+1825
+    Play#8 output Play#8 1 Balance forward						           29567
+    Play#8 output Play#8 1 Estimated delta						            +645
+    Play#8 output Play#8 1 Estimated new treasury.............................................30212
+    Play#8 output Play#8 6 0 601
+    Play#8 input nation
+    Play#8 command nation
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 (#8) 8 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 Nation status is ACTIVE     Bureaucratic Time Units: 601
+    Play#8 output Play#8 1 0% eff capital at 7,-1 has 2 civilians & 0 military
+    Play#8 output Play#8 1  The treasury has $29567.00     Military reserves: 0
+    Play#8 output Play#8 1 Education..........  0.00       Happiness.......  0.00
+    Play#8 output Play#8 1 Technology.........  9.33       Research........  0.00
+    Play#8 output Play#8 1 Technology factor : 28.34%     Plague factor :   0.00%
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 Max population : 1000
+    Play#8 output Play#8 1 Max safe population for civs/uws: 769/869
+    Play#8 output Play#8 1 No happiness needed
+    Play#8 output Play#8 6 0 601
+    Play#8 input __cmd added 3 1 0
+    Play#8 command __cmd
     Play#8 output Play#8 6 0 602
     Play#8 input ctld
     Play#8 output Play#8 1 Bye-bye
@@ -6970,6 +7835,84 @@
     Play#1 output Play#1 1    5,3    p 100%   492    0  1.00 $0       0l            492l             492
     Play#1 output Play#1 1 23 sectors
     Play#1 output Play#1 6 0 595
+    Play#1 input neweff *
+    Play#1 command neweff
+    Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 EFFICIENCY SIMULATION
+    Play#1 output Play#1 1    sect  des    projected eff
+    Play#1 output Play#1 1    1,-3   o    100%
+    Play#1 output Play#1 1   -4,-2   o    100%
+    Play#1 output Play#1 1   -2,-2   o    100%
+    Play#1 output Play#1 1    0,-2   c    100%
+    Play#1 output Play#1 1    2,-2   +    100%
+    Play#1 output Play#1 1    4,-2   t    100%
+    Play#1 output Play#1 1    6,-2   l    100%
+    Play#1 output Play#1 1   -1,-1   b    100%
+    Play#1 output Play#1 1    1,-1   m    100%
+    Play#1 output Play#1 1    3,-1   j    100%
+    Play#1 output Play#1 1    5,-1   h    100%
+    Play#1 output Play#1 1    7,-1   =    100%
+    Play#1 output Play#1 1    9,-1   =     20%
+    Play#1 output Play#1 1   11,-1   )    100%
+    Play#1 output Play#1 1   -2,0    j    100%
+    Play#1 output Play#1 1    0,0    m    100%
+    Play#1 output Play#1 1    2,0    m    100%
+    Play#1 output Play#1 1    4,0    k    100%
+    Play#1 output Play#1 1   -1,1    k    100%
+    Play#1 output Play#1 1    1,1    m    100%
+    Play#1 output Play#1 1    3,1    m    100%
+    Play#1 output Play#1 1    5,1    j    100%
+    Play#1 output Play#1 1    7,1    d    100%
+    Play#1 output Play#1 1   -2,2    i    100%
+    Play#1 output Play#1 1    0,2    m    100%
+    Play#1 output Play#1 1    2,2    k    100%
+    Play#1 output Play#1 1    4,2    r    100%
+    Play#1 output Play#1 1    6,2    w    100%
+    Play#1 output Play#1 1    8,2    e    100%
+    Play#1 output Play#1 1   10,2    !    100%
+    Play#1 output Play#1 1   -1,3    +     45%
+    Play#1 output Play#1 1    1,3    +     57%
+    Play#1 output Play#1 1    5,3    p    100%
+    Play#1 output Play#1 1 33 sectors
+    Play#1 output Play#1 6 0 595
+    Play#1 input budget
+    Play#1 command budget
+    Play#1 output Play#1 1 Sector Type			Production			    Cost
+    Play#1 output Play#1 1 shell industry   		51 shells 			     648
+    Play#1 output Play#1 1 technical center 		11 tech   			    4500
+    Play#1 output Play#1 1 library/school   		150 edu    			    1350
+    Play#1 output Play#1 1 bank             		61 bars   			     610
+    Play#1 output Play#1 1 enlistment center		30 mil    			      90
+    Play#1 output Play#1 1 Ship maintenance		1 ship          		      36
+    Play#1 output Play#1 1 Sector building			11 sectors      		    1030
+    Play#1 output Play#1 1 Sector maintenance		1 sector        		      60
+    Play#1 output Play#1 1 Military payroll		51 mil, 32 res                       273
+    Play#1 output Play#1 1 Total expenses......................................................8597
+    Play#1 output Play#1 1 Income from taxes		22370 civs, 742 uws               +10527
+    Play#1 output Play#1 1 Income from bars		96 bars                            +1440
+    Play#1 output Play#1 1 Total income......................................................+11967
+    Play#1 output Play#1 1 Balance forward						           19439
+    Play#1 output Play#1 1 Estimated delta						           +3370
+    Play#1 output Play#1 1 Estimated new treasury.............................................22809
+    Play#1 output Play#1 6 0 594
+    Play#1 input nation
+    Play#1 command nation
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 (#1) 1 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 Nation status is ACTIVE     Bureaucratic Time Units: 594
+    Play#1 output Play#1 1 100% eff capital at 0,-2 has 769 civilians & 0 military
+    Play#1 output Play#1 1  The treasury has $19439.00     Military reserves: 32
+    Play#1 output Play#1 1 Education.......... 37.42       Happiness.......  0.00
+    Play#1 output Play#1 1 Technology......... 23.05       Research........  0.00
+    Play#1 output Play#1 1 Technology factor : 32.75%     Plague factor :   0.00%
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 Max population : 1000
+    Play#1 output Play#1 1 Max safe population for civs/uws: 769/869
+    Play#1 output Play#1 1 Happiness needed is 12.05
+    Play#1 output Play#1 6 0 594
+    Play#1 input __cmd added 3 1 0
+    Play#1 command __cmd
+    Play#1 output Play#1 6 0 595
     Play#1 input ctld
     Play#1 output Play#1 1 Bye-bye
     Play#1 logout 1
@@ -7119,6 +8062,75 @@
     Play#8 output Play#8 1    2,0    m 100%   816  816i 1.00 $0                                      816
     Play#8 output Play#8 1    4,0    b 100%   323   60b 1.00 $600   300d            320d              64
     Play#8 output Play#8 1 9 sectors
+    Play#8 output Play#8 6 0 593
+    Play#8 input neweff *
+    Play#8 command neweff
+    Play#8 output Play#8 1 Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 EFFICIENCY SIMULATION
+    Play#8 output Play#8 1    sect  des    projected eff
+    Play#8 output Play#8 1   -6,-4   o    100%
+    Play#8 output Play#8 1   -4,-4   -      4%
+    Play#8 output Play#8 1    0,-4   -      0%
+    Play#8 output Play#8 1   -5,-3   o      3%
+    Play#8 output Play#8 1   -3,-3   -      1%
+    Play#8 output Play#8 1   -1,-3   g      3%
+    Play#8 output Play#8 1    1,-3   g    100%
+    Play#8 output Play#8 1   -4,-2   g      4%
+    Play#8 output Play#8 1   -2,-2   g      4%
+    Play#8 output Play#8 1    0,-2   g      3%
+    Play#8 output Play#8 1    2,-2   g      2%
+    Play#8 output Play#8 1    4,-2   -      0%
+    Play#8 output Play#8 1    6,-2   g     46%
+    Play#8 output Play#8 1   -3,-1   j    100%
+    Play#8 output Play#8 1   -1,-1   g    100%
+    Play#8 output Play#8 1    1,-1   m    100%
+    Play#8 output Play#8 1    3,-1   m    100%
+    Play#8 output Play#8 1    5,-1   g      3%
+    Play#8 output Play#8 1    7,-1   c      1%
+    Play#8 output Play#8 1   -2,0    g      3%
+    Play#8 output Play#8 1    0,0    m    100%
+    Play#8 output Play#8 1    2,0    m    100%
+    Play#8 output Play#8 1    4,0    b    100%
+    Play#8 output Play#8 1    6,0    g      2%
+    Play#8 output Play#8 1    8,0    -      2%
+    Play#8 output Play#8 1   -3,1    g      0%
+    Play#8 output Play#8 1   -1,1    -      0%
+    Play#8 output Play#8 1    1,1    g      4%
+    Play#8 output Play#8 1    3,1    w    100%
+    Play#8 output Play#8 1 29 sectors
+    Play#8 output Play#8 6 0 593
+    Play#8 input budget
+    Play#8 command budget
+    Play#8 output Play#8 1 Sector Type			Production			    Cost
+    Play#8 output Play#8 1 bank             		60 bars   			     600
+    Play#8 output Play#8 1 Sector building			22 sectors      		     382
+    Play#8 output Play#8 1 Sector maintenance		1 sector        		      60
+    Play#8 output Play#8 1 Military payroll		109 mil, 0 res                       548
+    Play#8 output Play#8 1 Total expenses......................................................1590
+    Play#8 output Play#8 1 Income from taxes		6675 civs, 595 uws                 +2554
+    Play#8 output Play#8 1 Income from bars		11 bars                             +165
+    Play#8 output Play#8 1 Total income.......................................................+2719
+    Play#8 output Play#8 1 Balance forward						           30212
+    Play#8 output Play#8 1 Estimated delta						           +1129
+    Play#8 output Play#8 1 Estimated new treasury.............................................31341
+    Play#8 output Play#8 6 0 592
+    Play#8 input nation
+    Play#8 command nation
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 (#8) 8 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 Nation status is ACTIVE     Bureaucratic Time Units: 592
+    Play#8 output Play#8 1 0% eff capital at 7,-1 has 3 civilians & 0 military
+    Play#8 output Play#8 1  The treasury has $30212.00     Military reserves: 0
+    Play#8 output Play#8 1 Education..........  0.00       Happiness.......  0.00
+    Play#8 output Play#8 1 Technology......... 11.53       Research........  0.00
+    Play#8 output Play#8 1 Technology factor : 29.09%     Plague factor :   0.00%
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 Max population : 1000
+    Play#8 output Play#8 1 Max safe population for civs/uws: 769/869
+    Play#8 output Play#8 1 No happiness needed
+    Play#8 output Play#8 6 0 592
+    Play#8 input __cmd added 3 1 0
+    Play#8 command __cmd
     Play#8 output Play#8 6 0 593
     Play#8 input ctld
     Play#8 output Play#8 1 Bye-bye
@@ -7744,6 +8756,87 @@
     Play#1 output Play#1 1    5,3    p 100%   649   75  1.00 $675    75l            649l             649
     Play#1 output Play#1 1 23 sectors
     Play#1 output Play#1 6 0 632
+    Play#1 input neweff *
+    Play#1 command neweff
+    Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 EFFICIENCY SIMULATION
+    Play#1 output Play#1 1    sect  des    projected eff
+    Play#1 output Play#1 1    1,-3   o    100%
+    Play#1 output Play#1 1   -4,-2   o    100%
+    Play#1 output Play#1 1   -2,-2   o    100%
+    Play#1 output Play#1 1    0,-2   c    100%
+    Play#1 output Play#1 1    2,-2   +    100%
+    Play#1 output Play#1 1    4,-2   t    100%
+    Play#1 output Play#1 1    6,-2   l    100%
+    Play#1 output Play#1 1   -1,-1   b    100%
+    Play#1 output Play#1 1    1,-1   m    100%
+    Play#1 output Play#1 1    3,-1   j    100%
+    Play#1 output Play#1 1    5,-1   h    100%
+    Play#1 output Play#1 1    7,-1   =    100%
+    Play#1 output Play#1 1    9,-1   =     50%
+    Play#1 output Play#1 1   11,-1   )    100%
+    Play#1 output Play#1 1   -2,0    j    100%
+    Play#1 output Play#1 1    0,0    m    100%
+    Play#1 output Play#1 1    2,0    m    100%
+    Play#1 output Play#1 1    4,0    k    100%
+    Play#1 output Play#1 1   -1,1    k    100%
+    Play#1 output Play#1 1    1,1    m    100%
+    Play#1 output Play#1 1    3,1    m    100%
+    Play#1 output Play#1 1    5,1    j    100%
+    Play#1 output Play#1 1    7,1    d    100%
+    Play#1 output Play#1 1   -2,2    i    100%
+    Play#1 output Play#1 1    0,2    m    100%
+    Play#1 output Play#1 1    2,2    k    100%
+    Play#1 output Play#1 1    4,2    r    100%
+    Play#1 output Play#1 1    6,2    w    100%
+    Play#1 output Play#1 1    8,2    e    100%
+    Play#1 output Play#1 1   10,2    !    100%
+    Play#1 output Play#1 1   -1,3    +    100%
+    Play#1 output Play#1 1    1,3    +    100%
+    Play#1 output Play#1 1    5,3    p    100%
+    Play#1 output Play#1 1 33 sectors
+    Play#1 output Play#1 6 0 632
+    Play#1 input budget
+    Play#1 command budget
+    Play#1 output Play#1 1 Sector Type			Production			    Cost
+    Play#1 output Play#1 1 park             		75 happy  			     675
+    Play#1 output Play#1 1 defense plant    		4 guns   			     300
+    Play#1 output Play#1 1 shell industry   		85 shells 			     600
+    Play#1 output Play#1 1 technical center 		11 tech   			    4500
+    Play#1 output Play#1 1 research lab     		7 medical			     900
+    Play#1 output Play#1 1 library/school   		250 edu    			    2250
+    Play#1 output Play#1 1 bank             		60 bars   			     600
+    Play#1 output Play#1 1 enlistment center		33 mil    			      99
+    Play#1 output Play#1 1 Ship maintenance		1 ship          		      36
+    Play#1 output Play#1 1 Sector building			3 sectors       		     127
+    Play#1 output Play#1 1 Sector maintenance		1 sector        		      60
+    Play#1 output Play#1 1 Military payroll		81 mil, 32 res                       421
+    Play#1 output Play#1 1 Total expenses.....................................................10568
+    Play#1 output Play#1 1 Income from taxes		28414 civs, 853 uws               +13876
+    Play#1 output Play#1 1 Income from bars		157 bars                           +2355
+    Play#1 output Play#1 1 Total income......................................................+16231
+    Play#1 output Play#1 1 Balance forward						           22809
+    Play#1 output Play#1 1 Estimated delta						           +5663
+    Play#1 output Play#1 1 Estimated new treasury.............................................28472
+    Play#1 output Play#1 6 0 631
+    Play#1 input nation
+    Play#1 command nation
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 (#1) 1 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 Nation status is ACTIVE     Bureaucratic Time Units: 631
+    Play#1 output Play#1 1 100% eff capital at 0,-2 has 769 civilians & 0 military
+    Play#1 output Play#1 1  The treasury has $22809.00     Military reserves: 32
+    Play#1 output Play#1 1 Education.......... 34.59       Happiness.......  0.00
+    Play#1 output Play#1 1 Technology......... 27.40       Research........  0.00
+    Play#1 output Play#1 1 Technology factor : 34.04%     Plague factor :   0.00%
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 Max population : 1000
+    Play#1 output Play#1 1 Max safe population for civs/uws: 769/869
+    Play#1 output Play#1 1 Happiness needed is 11.21
+    Play#1 output Play#1 6 0 631
+    Play#1 input __cmd added 3 1 0
+    Play#1 command __cmd
+    Play#1 output Play#1 6 0 632
     Play#1 input ctld
     Play#1 output Play#1 1 Bye-bye
     Play#1 logout 1
@@ -7923,6 +9016,76 @@
     Play#8 output Play#8 1    4,0    b 100%   296   59b 1.00 $590   295d            295d              59
     Play#8 output Play#8 1    6,0    g  10%   502   50d 1.00 $0                                       50
     Play#8 output Play#8 1 11 sectors
+    Play#8 output Play#8 6 0 575
+    Play#8 input neweff *
+    Play#8 command neweff
+    Play#8 output Play#8 1 Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 EFFICIENCY SIMULATION
+    Play#8 output Play#8 1    sect  des    projected eff
+    Play#8 output Play#8 1   -6,-4   o    100%
+    Play#8 output Play#8 1   -4,-4   -      7%
+    Play#8 output Play#8 1    0,-4   k      0%
+    Play#8 output Play#8 1   -5,-3   o      4%
+    Play#8 output Play#8 1   -3,-3   -      3%
+    Play#8 output Play#8 1   -1,-3   g      4%
+    Play#8 output Play#8 1    1,-3   l    100%
+    Play#8 output Play#8 1   -4,-2   g      7%
+    Play#8 output Play#8 1   -2,-2   g      9%
+    Play#8 output Play#8 1    0,-2   g      4%
+    Play#8 output Play#8 1    2,-2   g      4%
+    Play#8 output Play#8 1    4,-2   -      0%
+    Play#8 output Play#8 1    6,-2   g    100%
+    Play#8 output Play#8 1   -3,-1   j    100%
+    Play#8 output Play#8 1   -1,-1   m    100%
+    Play#8 output Play#8 1    1,-1   m    100%
+    Play#8 output Play#8 1    3,-1   m    100%
+    Play#8 output Play#8 1    5,-1   g      4%
+    Play#8 output Play#8 1    7,-1   c      3%
+    Play#8 output Play#8 1   -2,0    g      4%
+    Play#8 output Play#8 1    0,0    m    100%
+    Play#8 output Play#8 1    2,0    m    100%
+    Play#8 output Play#8 1    4,0    b    100%
+    Play#8 output Play#8 1    6,0    g    100%
+    Play#8 output Play#8 1    8,0    -      3%
+    Play#8 output Play#8 1   -3,1    g      0%
+    Play#8 output Play#8 1   -1,1    j      0%
+    Play#8 output Play#8 1    1,1    g      5%
+    Play#8 output Play#8 1    3,1    w    100%
+    Play#8 output Play#8 1 29 sectors
+    Play#8 output Play#8 6 0 575
+    Play#8 input budget
+    Play#8 command budget
+    Play#8 output Play#8 1 Sector Type			Production			    Cost
+    Play#8 output Play#8 1 library/school   		300 edu    			    2700
+    Play#8 output Play#8 1 bank             		59 bars   			     590
+    Play#8 output Play#8 1 Sector building			21 sectors      		     425
+    Play#8 output Play#8 1 Sector maintenance		1 sector        		      60
+    Play#8 output Play#8 1 Military payroll		109 mil, 0 res                       548
+    Play#8 output Play#8 1 Total expenses......................................................4323
+    Play#8 output Play#8 1 Income from taxes		8675 civs, 685 uws                 +3789
+    Play#8 output Play#8 1 Income from bars		71 bars                            +1065
+    Play#8 output Play#8 1 Total income.......................................................+4854
+    Play#8 output Play#8 1 Balance forward						           31341
+    Play#8 output Play#8 1 Estimated delta						            +531
+    Play#8 output Play#8 1 Estimated new treasury.............................................31872
+    Play#8 output Play#8 6 0 574
+    Play#8 input nation
+    Play#8 command nation
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 (#8) 8 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 Nation status is ACTIVE     Bureaucratic Time Units: 574
+    Play#8 output Play#8 1 1% eff capital at 7,-1 has 4 civilians & 0 military
+    Play#8 output Play#8 1  The treasury has $31341.00     Military reserves: 0
+    Play#8 output Play#8 1 Education..........  0.00       Happiness.......  0.00
+    Play#8 output Play#8 1 Technology......... 13.70       Research........  0.00
+    Play#8 output Play#8 1 Technology factor : 29.81%     Plague factor :   0.00%
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 Max population : 1000
+    Play#8 output Play#8 1 Max safe population for civs/uws: 769/869
+    Play#8 output Play#8 1 No happiness needed
+    Play#8 output Play#8 6 0 574
+    Play#8 input __cmd added 3 1 0
+    Play#8 command __cmd
     Play#8 output Play#8 6 0 575
     Play#8 input ctld
     Play#8 output Play#8 1 Bye-bye
@@ -8461,6 +9624,90 @@
     Play#1 output Play#1 1    5,3    p 100%   649   75  1.00 $675    75l            649l             649
     Play#1 output Play#1 1 23 sectors
     Play#1 output Play#1 6 0 635
+    Play#1 input neweff *
+    Play#1 command neweff
+    Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 EFFICIENCY SIMULATION
+    Play#1 output Play#1 1    sect  des    projected eff
+    Play#1 output Play#1 1    1,-3   o    100%
+    Play#1 output Play#1 1   -4,-2   o    100%
+    Play#1 output Play#1 1   -2,-2   o    100%
+    Play#1 output Play#1 1    0,-2   c    100%
+    Play#1 output Play#1 1    2,-2   +    100%
+    Play#1 output Play#1 1    4,-2   t    100%
+    Play#1 output Play#1 1    6,-2   l    100%
+    Play#1 output Play#1 1   -1,-1   b    100%
+    Play#1 output Play#1 1    1,-1   m    100%
+    Play#1 output Play#1 1    3,-1   j    100%
+    Play#1 output Play#1 1    5,-1   h    100%
+    Play#1 output Play#1 1    7,-1   =    100%
+    Play#1 output Play#1 1    9,-1   =     94%
+    Play#1 output Play#1 1   11,-1   )    100%
+    Play#1 output Play#1 1   -2,0    j    100%
+    Play#1 output Play#1 1    0,0    m    100%
+    Play#1 output Play#1 1    2,0    m    100%
+    Play#1 output Play#1 1    4,0    k    100%
+    Play#1 output Play#1 1   -1,1    k    100%
+    Play#1 output Play#1 1    1,1    m    100%
+    Play#1 output Play#1 1    3,1    m    100%
+    Play#1 output Play#1 1    5,1    j    100%
+    Play#1 output Play#1 1    7,1    d    100%
+    Play#1 output Play#1 1   -2,2    i    100%
+    Play#1 output Play#1 1    0,2    m    100%
+    Play#1 output Play#1 1    2,2    k    100%
+    Play#1 output Play#1 1    4,2    r    100%
+    Play#1 output Play#1 1    6,2    w    100%
+    Play#1 output Play#1 1    8,2    e    100%
+    Play#1 output Play#1 1   10,2    !    100%
+    Play#1 output Play#1 1   -1,3    +    100%
+    Play#1 output Play#1 1    1,3    +    100%
+    Play#1 output Play#1 1    5,3    p    100%
+    Play#1 output Play#1 1 33 sectors
+    Play#1 output Play#1 6 0 635
+    Play#1 input budget
+    Play#1 command budget
+    Play#1 output Play#1 1 Sector Type			Production			    Cost
+    Play#1 output Play#1 1 park             		75 happy  			     675
+    Play#1 output Play#1 1 defense plant    		5 guns   			     300
+    Play#1 output Play#1 1 shell industry   		107 shells 			     597
+    Play#1 output Play#1 1 technical center 		11 tech   			    4500
+    Play#1 output Play#1 1 research lab     		7 medical			     900
+    Play#1 output Play#1 1 library/school   		300 edu    			    2700
+    Play#1 output Play#1 1 bank             		60 bars   			     600
+    Play#1 output Play#1 1 enlistment center		33 mil    			      99
+    Play#1 output Play#1 1 Ship building			3 ships         		    1200
+    Play#1 output Play#1 1 Ship maintenance		4 ships         		     126
+    Play#1 output Play#1 1 Unit building			5 units         		    2250
+    Play#1 output Play#1 1 Unit maintenance		5 units         		     150
+    Play#1 output Play#1 1 Sector building			1 sector        		      44
+    Play#1 output Play#1 1 Sector maintenance		1 sector        		      60
+    Play#1 output Play#1 1 Military payroll		113 mil, 31 res                      585
+    Play#1 output Play#1 1 Total expenses.....................................................14786
+    Play#1 output Play#1 1 Income from taxes		31160 civs, 981 uws               +15650
+    Play#1 output Play#1 1 Income from bars		217 bars                           +3255
+    Play#1 output Play#1 1 Total income......................................................+18905
+    Play#1 output Play#1 1 Balance forward						           27922
+    Play#1 output Play#1 1 Estimated delta						           +4119
+    Play#1 output Play#1 1 Estimated new treasury.............................................32041
+    Play#1 output Play#1 6 0 634
+    Play#1 input nation
+    Play#1 command nation
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 (#1) 1 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 Nation status is ACTIVE     Bureaucratic Time Units: 634
+    Play#1 output Play#1 1 100% eff capital at 0,-2 has 769 civilians & 0 military
+    Play#1 output Play#1 1  The treasury has $27922.00     Military reserves: 31
+    Play#1 output Play#1 1 Education.......... 33.68       Happiness.......  7.18
+    Play#1 output Play#1 1 Technology......... 31.69       Research........  3.68
+    Play#1 output Play#1 1 Technology factor : 35.26%     Plague factor :   0.00%
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 Max population : 1000
+    Play#1 output Play#1 1 Max safe population for civs/uws: 769/869
+    Play#1 output Play#1 1 Happiness needed is 11.02
+    Play#1 output Play#1 6 0 634
+    Play#1 input __cmd added 3 1 0
+    Play#1 command __cmd
+    Play#1 output Play#1 6 0 635
     Play#1 input ctld
     Play#1 output Play#1 1 Bye-bye
     Play#1 logout 1
@@ -8621,6 +9868,77 @@
     Play#8 output Play#8 1   -3,1    g  46%   499  229d 1.00 $0                                      229
     Play#8 output Play#8 1   -1,1    j 100%   499  360l 0.72 $0     499i            499i             360
     Play#8 output Play#8 1 14 sectors
+    Play#8 output Play#8 6 0 564
+    Play#8 input neweff *
+    Play#8 command neweff
+    Play#8 output Play#8 1 Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 EFFICIENCY SIMULATION
+    Play#8 output Play#8 1    sect  des    projected eff
+    Play#8 output Play#8 1   -6,-4   o    100%
+    Play#8 output Play#8 1   -4,-4   -     11%
+    Play#8 output Play#8 1    0,-4   k    100%
+    Play#8 output Play#8 1   -5,-3   o      9%
+    Play#8 output Play#8 1   -3,-3   -      4%
+    Play#8 output Play#8 1   -1,-3   g      9%
+    Play#8 output Play#8 1    1,-3   l    100%
+    Play#8 output Play#8 1   -4,-2   g     12%
+    Play#8 output Play#8 1   -2,-2   g     14%
+    Play#8 output Play#8 1    0,-2   g      6%
+    Play#8 output Play#8 1    2,-2   g      7%
+    Play#8 output Play#8 1    4,-2   j      1%
+    Play#8 output Play#8 1    6,-2   t    100%
+    Play#8 output Play#8 1   -3,-1   j    100%
+    Play#8 output Play#8 1   -1,-1   m    100%
+    Play#8 output Play#8 1    1,-1   m    100%
+    Play#8 output Play#8 1    3,-1   m    100%
+    Play#8 output Play#8 1    5,-1   g      9%
+    Play#8 output Play#8 1    7,-1   c      4%
+    Play#8 output Play#8 1   -2,0    g      7%
+    Play#8 output Play#8 1    0,0    m    100%
+    Play#8 output Play#8 1    2,0    m    100%
+    Play#8 output Play#8 1    4,0    b    100%
+    Play#8 output Play#8 1    6,0    h    100%
+    Play#8 output Play#8 1    8,0    i    100%
+    Play#8 output Play#8 1   -3,1    g    100%
+    Play#8 output Play#8 1   -1,1    j    100%
+    Play#8 output Play#8 1    1,1    g      8%
+    Play#8 output Play#8 1    3,1    w    100%
+    Play#8 output Play#8 1 29 sectors
+    Play#8 output Play#8 6 0 564
+    Play#8 input budget
+    Play#8 command budget
+    Play#8 output Play#8 1 Sector Type			Production			    Cost
+    Play#8 output Play#8 1 technical center 		8 tech   			    4200
+    Play#8 output Play#8 1 library/school   		300 edu    			    2700
+    Play#8 output Play#8 1 bank             		54 bars   			     540
+    Play#8 output Play#8 1 Sector building			19 sectors      		     684
+    Play#8 output Play#8 1 Sector maintenance		1 sector        		      60
+    Play#8 output Play#8 1 Military payroll		109 mil, 0 res                       548
+    Play#8 output Play#8 1 Total expenses......................................................8732
+    Play#8 output Play#8 1 Income from taxes		11277 civs, 788 uws                +4140
+    Play#8 output Play#8 1 Income from bars		130 bars                           +1950
+    Play#8 output Play#8 1 Total income.......................................................+6090
+    Play#8 output Play#8 1 Balance forward						           31871
+    Play#8 output Play#8 1 Estimated delta						           -2642
+    Play#8 output Play#8 1 Estimated new treasury.............................................29229
+    Play#8 output Play#8 6 0 563
+    Play#8 input nation
+    Play#8 command nation
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 (#8) 8 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 Nation status is ACTIVE     Bureaucratic Time Units: 563
+    Play#8 output Play#8 1 2% eff capital at 7,-1 has 5 civilians & 0 military
+    Play#8 output Play#8 1  The treasury has $31871.00     Military reserves: 0
+    Play#8 output Play#8 1 Education.......... 20.44       Happiness.......  0.00
+    Play#8 output Play#8 1 Technology......... 15.84       Research........  1.84
+    Play#8 output Play#8 1 Technology factor : 30.51%     Plague factor :   0.00%
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 Max population : 1000
+    Play#8 output Play#8 1 Max safe population for civs/uws: 769/869
+    Play#8 output Play#8 1 Happiness needed is 6.21
+    Play#8 output Play#8 6 0 563
+    Play#8 input __cmd added 3 1 0
+    Play#8 command __cmd
     Play#8 output Play#8 6 0 564
     Play#8 input ctld
     Play#8 output Play#8 1 Bye-bye
@@ -9358,6 +10676,89 @@
     Play#1 output Play#1 1    5,3    p 100%   649   75  1.00 $675    75l            649l             649
     Play#1 output Play#1 1 24 sectors
     Play#1 output Play#1 6 0 587
+    Play#1 input neweff *
+    Play#1 command neweff
+    Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 EFFICIENCY SIMULATION
+    Play#1 output Play#1 1    sect  des    projected eff
+    Play#1 output Play#1 1    1,-3   j    100%
+    Play#1 output Play#1 1   -4,-2   k    100%
+    Play#1 output Play#1 1   -2,-2   j    100%
+    Play#1 output Play#1 1    0,-2   c    100%
+    Play#1 output Play#1 1    2,-2   +    100%
+    Play#1 output Play#1 1    4,-2   t    100%
+    Play#1 output Play#1 1    6,-2   l    100%
+    Play#1 output Play#1 1   -1,-1   b    100%
+    Play#1 output Play#1 1    1,-1   m    100%
+    Play#1 output Play#1 1    3,-1   m    100%
+    Play#1 output Play#1 1    5,-1   h    100%
+    Play#1 output Play#1 1    7,-1   =    100%
+    Play#1 output Play#1 1    9,-1   =    100%
+    Play#1 output Play#1 1   11,-1   )    100%
+    Play#1 output Play#1 1   -2,0    j    100%
+    Play#1 output Play#1 1    0,0    m    100%
+    Play#1 output Play#1 1    2,0    m    100%
+    Play#1 output Play#1 1    4,0    k    100%
+    Play#1 output Play#1 1   -1,1    k    100%
+    Play#1 output Play#1 1    1,1    m    100%
+    Play#1 output Play#1 1    3,1    m    100%
+    Play#1 output Play#1 1    5,1    j    100%
+    Play#1 output Play#1 1    7,1    d    100%
+    Play#1 output Play#1 1   -2,2    i    100%
+    Play#1 output Play#1 1    0,2    m    100%
+    Play#1 output Play#1 1    2,2    k    100%
+    Play#1 output Play#1 1    4,2    r    100%
+    Play#1 output Play#1 1    6,2    w    100%
+    Play#1 output Play#1 1    8,2    e    100%
+    Play#1 output Play#1 1   10,2    !    100%
+    Play#1 output Play#1 1   -1,3    o    100%
+    Play#1 output Play#1 1    1,3    +    100%
+    Play#1 output Play#1 1    5,3    p    100%
+    Play#1 output Play#1 1 33 sectors
+    Play#1 output Play#1 6 0 587
+    Play#1 input budget
+    Play#1 command budget
+    Play#1 output Play#1 1 Sector Type			Production			    Cost
+    Play#1 output Play#1 1 park             		75 happy  			     675
+    Play#1 output Play#1 1 defense plant    		6 guns   			     300
+    Play#1 output Play#1 1 shell industry   		128 shells 			     600
+    Play#1 output Play#1 1 technical center 		11 tech   			    4500
+    Play#1 output Play#1 1 research lab     		7 medical			     900
+    Play#1 output Play#1 1 library/school   		300 edu    			    2700
+    Play#1 output Play#1 1 bank             		60 bars   			     600
+    Play#1 output Play#1 1 enlistment center		33 mil    			      99
+    Play#1 output Play#1 1 Ship maintenance		2 ships         		      66
+    Play#1 output Play#1 1 Unit building			1 unit          		     720
+    Play#1 output Play#1 1 Unit maintenance		4 units         		     138
+    Play#1 output Play#1 1 Sector building			6 sectors       		     632
+    Play#1 output Play#1 1 Sector maintenance		1 sector        		      60
+    Play#1 output Play#1 1 Military payroll		145 mil, 30 res                      743
+    Play#1 output Play#1 1 Total expenses.....................................................12733
+    Play#1 output Play#1 1 Income from taxes		30846 civs, 1128 uws              +15525
+    Play#1 output Play#1 1 Income from bars		277 bars                           +4155
+    Play#1 output Play#1 1 Total income......................................................+19680
+    Play#1 output Play#1 1 Balance forward						           31961
+    Play#1 output Play#1 1 Estimated delta						           +6947
+    Play#1 output Play#1 1 Estimated new treasury.............................................38908
+    Play#1 output Play#1 6 0 586
+    Play#1 input nation
+    Play#1 command nation
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 (#1) 1 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 Nation status is ACTIVE     Bureaucratic Time Units: 586
+    Play#1 output Play#1 1 100% eff capital at 0,-2 has 769 civilians & 0 military
+    Play#1 output Play#1 1  The treasury has $31961.00     Military reserves: 30
+    Play#1 output Play#1 1 Education.......... 33.46       Happiness.......  9.97
+    Play#1 output Play#1 1 Technology......... 37.97       Research........  7.32
+    Play#1 output Play#1 1 Technology factor : 36.97%     Plague factor :   0.00%
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 Max population : 1000
+    Play#1 output Play#1 1 Max safe population for civs/uws: 769/869
+    Play#1 output Play#1 1 Happiness needed is 11.10
+    Play#1 output Play#1 6 0 586
+    Play#1 input __cmd added 3 1 0
+    Play#1 command __cmd
+    Play#1 output Play#1 6 0 587
     Play#1 input ctld
     Play#1 output Play#1 1 Bye-bye
     Play#1 logout 1
@@ -9986,6 +11387,75 @@
     Play#2 output Play#2 1    2,0    g 100%   782  500d 1.00 $0                                      500
     Play#2 output Play#2 1 4 sectors
     Play#2 output Play#2 6 0 559
+    Play#2 input neweff *
+    Play#2 command neweff
+    Play#2 output Play#2 1 Thu Jan  1 00:00:00 1970
+    Play#2 output Play#2 1 EFFICIENCY SIMULATION
+    Play#2 output Play#2 1    sect  des    projected eff
+    Play#2 output Play#2 1   -6,-2   +      0%
+    Play#2 output Play#2 1   -4,-2   w      0%
+    Play#2 output Play#2 1    2,-2   c      0%
+    Play#2 output Play#2 1   -7,-1   +      0%
+    Play#2 output Play#2 1   -5,-1   g      0%
+    Play#2 output Play#2 1   -1,-1   o      0%
+    Play#2 output Play#2 1    1,-1   b    100%
+    Play#2 output Play#2 1    3,-1   g    100%
+    Play#2 output Play#2 1    5,-1   g     39%
+    Play#2 output Play#2 1    7,-1   g      0%
+    Play#2 output Play#2 1   -6,0    g      0%
+    Play#2 output Play#2 1   -4,0    g      0%
+    Play#2 output Play#2 1   -2,0    g      0%
+    Play#2 output Play#2 1    0,0    g    100%
+    Play#2 output Play#2 1    2,0    g    100%
+    Play#2 output Play#2 1    4,0    +      0%
+    Play#2 output Play#2 1   -7,1    +      0%
+    Play#2 output Play#2 1   -5,1    +      0%
+    Play#2 output Play#2 1   -3,1    g      0%
+    Play#2 output Play#2 1   -1,1    g      0%
+    Play#2 output Play#2 1    1,1    g      0%
+    Play#2 output Play#2 1    3,1    +      0%
+    Play#2 output Play#2 1   -4,2    g      0%
+    Play#2 output Play#2 1   -2,2    g      0%
+    Play#2 output Play#2 1    0,2    g      0%
+    Play#2 output Play#2 1    2,2    g      0%
+    Play#2 output Play#2 1   -3,3    +      0%
+    Play#2 output Play#2 1   -1,3    +      0%
+    Play#2 output Play#2 1    1,3    +      0%
+    Play#2 output Play#2 1    3,3    g      0%
+    Play#2 output Play#2 1 30 sectors
+    Play#2 output Play#2 6 0 559
+    Play#2 input budget
+    Play#2 command budget
+    Play#2 output Play#2 1 Sector Type			Production			    Cost
+    Play#2 output Play#2 1 bank             		10 bars   			     100
+    Play#2 output Play#2 1 Sector building			30 sectors      		     514
+    Play#2 output Play#2 1 Sector maintenance		3 sectors       		     180
+    Play#2 output Play#2 1 Military payroll		0 mil, 110 res                        54
+    Play#2 output Play#2 1 Total expenses.......................................................848
+    Play#2 output Play#2 1 Income from taxes		3110 civs, 916 uws                 +1365
+    Play#2 output Play#2 1 Total income.......................................................+1365
+    Play#2 output Play#2 1 Balance forward						           33792
+    Play#2 output Play#2 1 Estimated delta						            +517
+    Play#2 output Play#2 1 Estimated new treasury.............................................34309
+    Play#2 output Play#2 6 0 558
+    Play#2 input nation
+    Play#2 command nation
+    Play#2 output Play#2 1
+    Play#2 output Play#2 1 (#2) 2 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#2 output Play#2 1 Nation status is ACTIVE     Bureaucratic Time Units: 558
+    Play#2 output Play#2 1 0% eff capital at 2,-2 has 2 civilians & 0 military
+    Play#2 output Play#2 1  The treasury has $33792.00     Military reserves: 110
+    Play#2 output Play#2 1 Education..........  0.00       Happiness.......  0.00
+    Play#2 output Play#2 1 Technology......... 17.87       Research........  3.66
+    Play#2 output Play#2 1 Technology factor : 31.15%     Plague factor :   0.00%
+    Play#2 output Play#2 1
+    Play#2 output Play#2 1 Max population : 1000
+    Play#2 output Play#2 1 Max safe population for civs/uws: 769/869
+    Play#2 output Play#2 1 No happiness needed
+    Play#2 output Play#2 6 0 558
+    Play#2 input __cmd added 3 1 0
+    Play#2 command __cmd
+    Play#2 output Play#2 6 0 559
     Play#2 input ctld
     Play#2 output Play#2 1 Bye-bye
     Play#2 logout 2
@@ -10156,6 +11626,77 @@
     Play#8 output Play#8 1   -3,1    j 100%   474  361l 0.76 $0     474i            474i             361
     Play#8 output Play#8 1   -1,1    j 100%   599  456l 0.76 $0     599i            599i             456
     Play#8 output Play#8 1 18 sectors
+    Play#8 output Play#8 6 0 552
+    Play#8 input neweff *
+    Play#8 command neweff
+    Play#8 output Play#8 1 Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 EFFICIENCY SIMULATION
+    Play#8 output Play#8 1    sect  des    projected eff
+    Play#8 output Play#8 1   -6,-4   o    100%
+    Play#8 output Play#8 1   -4,-4   -     16%
+    Play#8 output Play#8 1    0,-4   k    100%
+    Play#8 output Play#8 1   -5,-3   o     14%
+    Play#8 output Play#8 1   -3,-3   -      7%
+    Play#8 output Play#8 1   -1,-3   g     14%
+    Play#8 output Play#8 1    1,-3   l    100%
+    Play#8 output Play#8 1   -4,-2   g     17%
+    Play#8 output Play#8 1   -2,-2   g    100%
+    Play#8 output Play#8 1    0,-2   g    100%
+    Play#8 output Play#8 1    2,-2   k    100%
+    Play#8 output Play#8 1    4,-2   j    100%
+    Play#8 output Play#8 1    6,-2   t    100%
+    Play#8 output Play#8 1   -3,-1   j    100%
+    Play#8 output Play#8 1   -1,-1   m    100%
+    Play#8 output Play#8 1    1,-1   m    100%
+    Play#8 output Play#8 1    3,-1   m    100%
+    Play#8 output Play#8 1    5,-1   g     14%
+    Play#8 output Play#8 1    7,-1   c      9%
+    Play#8 output Play#8 1   -2,0    g     11%
+    Play#8 output Play#8 1    0,0    m    100%
+    Play#8 output Play#8 1    2,0    m    100%
+    Play#8 output Play#8 1    4,0    b    100%
+    Play#8 output Play#8 1    6,0    h    100%
+    Play#8 output Play#8 1    8,0    i    100%
+    Play#8 output Play#8 1   -3,1    j    100%
+    Play#8 output Play#8 1   -1,1    j    100%
+    Play#8 output Play#8 1    1,1    g     13%
+    Play#8 output Play#8 1    3,1    w    100%
+    Play#8 output Play#8 1 29 sectors
+    Play#8 output Play#8 6 0 552
+    Play#8 input budget
+    Play#8 command budget
+    Play#8 output Play#8 1 Sector Type			Production			    Cost
+    Play#8 output Play#8 1 technical center 		22 tech   			    9000
+    Play#8 output Play#8 1 library/school   		300 edu    			    2700
+    Play#8 output Play#8 1 bank             		60 bars   			     600
+    Play#8 output Play#8 1 Sector building			14 sectors      		     540
+    Play#8 output Play#8 1 Sector maintenance		1 sector        		      60
+    Play#8 output Play#8 1 Military payroll		109 mil, 0 res                       548
+    Play#8 output Play#8 1 Total expenses.....................................................13448
+    Play#8 output Play#8 1 Income from taxes		14661 civs, 906 uws                +5950
+    Play#8 output Play#8 1 Income from bars		184 bars                           +2760
+    Play#8 output Play#8 1 Total income.......................................................+8710
+    Play#8 output Play#8 1 Balance forward						           29228
+    Play#8 output Play#8 1 Estimated delta						           -4738
+    Play#8 output Play#8 1 Estimated new treasury.............................................24490
+    Play#8 output Play#8 6 0 551
+    Play#8 input nation
+    Play#8 command nation
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 (#8) 8 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 Nation status is ACTIVE     Bureaucratic Time Units: 551
+    Play#8 output Play#8 1 5% eff capital at 7,-1 has 7 civilians & 0 military
+    Play#8 output Play#8 1  The treasury has $29228.00     Military reserves: 0
+    Play#8 output Play#8 1 Education.......... 32.20       Happiness.......  0.00
+    Play#8 output Play#8 1 Technology......... 22.03       Research........  3.66
+    Play#8 output Play#8 1 Technology factor : 32.44%     Plague factor :   0.00%
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 Max population : 1000
+    Play#8 output Play#8 1 Max safe population for civs/uws: 769/869
+    Play#8 output Play#8 1 Happiness needed is 10.29
+    Play#8 output Play#8 6 0 551
+    Play#8 input __cmd added 3 1 0
+    Play#8 command __cmd
     Play#8 output Play#8 6 0 552
     Play#8 input ctld
     Play#8 output Play#8 1 Bye-bye
@@ -10832,6 +12373,89 @@
     Play#1 output Play#1 1    5,3    p 100%   649   75  1.00 $675    75l            649l             649
     Play#1 output Play#1 1 24 sectors
     Play#1 output Play#1 6 0 622
+    Play#1 input neweff *
+    Play#1 command neweff
+    Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 EFFICIENCY SIMULATION
+    Play#1 output Play#1 1    sect  des    projected eff
+    Play#1 output Play#1 1    1,-3   j    100%
+    Play#1 output Play#1 1   -4,-2   k    100%
+    Play#1 output Play#1 1   -2,-2   j    100%
+    Play#1 output Play#1 1    0,-2   c    100%
+    Play#1 output Play#1 1    2,-2   o    100%
+    Play#1 output Play#1 1    4,-2   t    100%
+    Play#1 output Play#1 1    6,-2   l    100%
+    Play#1 output Play#1 1   -1,-1   b    100%
+    Play#1 output Play#1 1    1,-1   m    100%
+    Play#1 output Play#1 1    3,-1   m    100%
+    Play#1 output Play#1 1    5,-1   h    100%
+    Play#1 output Play#1 1    7,-1   =    100%
+    Play#1 output Play#1 1    9,-1   =    100%
+    Play#1 output Play#1 1   11,-1   )    100%
+    Play#1 output Play#1 1   -2,0    j    100%
+    Play#1 output Play#1 1    0,0    m    100%
+    Play#1 output Play#1 1    2,0    m    100%
+    Play#1 output Play#1 1    4,0    k    100%
+    Play#1 output Play#1 1   -1,1    k    100%
+    Play#1 output Play#1 1    1,1    m    100%
+    Play#1 output Play#1 1    3,1    m    100%
+    Play#1 output Play#1 1    5,1    j    100%
+    Play#1 output Play#1 1    7,1    d    100%
+    Play#1 output Play#1 1   -2,2    i    100%
+    Play#1 output Play#1 1    0,2    m    100%
+    Play#1 output Play#1 1    2,2    *    100%
+    Play#1 output Play#1 1    4,2    r    100%
+    Play#1 output Play#1 1    6,2    w    100%
+    Play#1 output Play#1 1    8,2    e    100%
+    Play#1 output Play#1 1   10,2    !    100%
+    Play#1 output Play#1 1   -1,3    o    100%
+    Play#1 output Play#1 1    1,3    +    100%
+    Play#1 output Play#1 1    5,3    p    100%
+    Play#1 output Play#1 1 33 sectors
+    Play#1 output Play#1 6 0 622
+    Play#1 input budget
+    Play#1 command budget
+    Play#1 output Play#1 1 Sector Type			Production			    Cost
+    Play#1 output Play#1 1 park             		75 happy  			     675
+    Play#1 output Play#1 1 defense plant    		7 guns   			     300
+    Play#1 output Play#1 1 shell industry   		142 shells 			     600
+    Play#1 output Play#1 1 technical center 		11 tech   			    4500
+    Play#1 output Play#1 1 research lab     		7 medical			     900
+    Play#1 output Play#1 1 library/school   		400 edu    			    3600
+    Play#1 output Play#1 1 bank             		60 bars   			     600
+    Play#1 output Play#1 1 enlistment center		33 mil    			      99
+    Play#1 output Play#1 1 Ship building			1 ship          		     480
+    Play#1 output Play#1 1 Ship maintenance		3 ships         		     102
+    Play#1 output Play#1 1 Unit maintenance		4 units         		     138
+    Play#1 output Play#1 1 Sector building			2 sectors       		     250
+    Play#1 output Play#1 1 Sector maintenance		1 sector        		      60
+    Play#1 output Play#1 1 Military payroll		178 mil, 29 res                      908
+    Play#1 output Play#1 1 Total expenses.....................................................13212
+    Play#1 output Play#1 1 Income from taxes		30723 civs, 1298 uws              +15484
+    Play#1 output Play#1 1 Income from bars		337 bars                           +5055
+    Play#1 output Play#1 1 Total income......................................................+20539
+    Play#1 output Play#1 1 Balance forward						           38788
+    Play#1 output Play#1 1 Estimated delta						           +7327
+    Play#1 output Play#1 1 Estimated new treasury.............................................46115
+    Play#1 output Play#1 6 0 621
+    Play#1 input nation
+    Play#1 command nation
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 (#1) 1 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 Nation status is ACTIVE     Bureaucratic Time Units: 621
+    Play#1 output Play#1 1 100% eff capital at 0,-2 has 769 civilians & 0 military
+    Play#1 output Play#1 1  The treasury has $38788.00     Military reserves: 29
+    Play#1 output Play#1 1 Education.......... 33.30       Happiness....... 11.22
+    Play#1 output Play#1 1 Technology......... 44.89       Research........ 10.94
+    Play#1 output Play#1 1 Technology factor : 38.75%     Plague factor :   0.00%
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 Max population : 1000
+    Play#1 output Play#1 1 Max safe population for civs/uws: 769/869
+    Play#1 output Play#1 1 Happiness needed is 11.22
+    Play#1 output Play#1 6 0 621
+    Play#1 input __cmd added 3 1 0
+    Play#1 command __cmd
+    Play#1 output Play#1 6 0 622
     Play#1 input ctld
     Play#1 output Play#1 1 Bye-bye
     Play#1 logout 1
@@ -11104,6 +12728,76 @@
     Play#2 output Play#2 1    2,0    m 100%   832  832i 1.00 $0                                      832
     Play#2 output Play#2 1 7 sectors
     Play#2 output Play#2 6 0 552
+    Play#2 input neweff *
+    Play#2 command neweff
+    Play#2 output Play#2 1 Thu Jan  1 00:00:00 1970
+    Play#2 output Play#2 1 EFFICIENCY SIMULATION
+    Play#2 output Play#2 1    sect  des    projected eff
+    Play#2 output Play#2 1   -6,-2   +      0%
+    Play#2 output Play#2 1   -4,-2   w     90%
+    Play#2 output Play#2 1    2,-2   c     20%
+    Play#2 output Play#2 1   -7,-1   +      0%
+    Play#2 output Play#2 1   -5,-1   g    100%
+    Play#2 output Play#2 1   -1,-1   o    100%
+    Play#2 output Play#2 1    1,-1   b    100%
+    Play#2 output Play#2 1    3,-1   g    100%
+    Play#2 output Play#2 1    5,-1   g    100%
+    Play#2 output Play#2 1    7,-1   g      1%
+    Play#2 output Play#2 1   -6,0    g      1%
+    Play#2 output Play#2 1   -4,0    g      1%
+    Play#2 output Play#2 1   -2,0    g      1%
+    Play#2 output Play#2 1    0,0    m    100%
+    Play#2 output Play#2 1    2,0    m    100%
+    Play#2 output Play#2 1    4,0    +      1%
+    Play#2 output Play#2 1   -7,1    +      0%
+    Play#2 output Play#2 1   -5,1    +      1%
+    Play#2 output Play#2 1   -3,1    g      1%
+    Play#2 output Play#2 1   -1,1    g      1%
+    Play#2 output Play#2 1    1,1    g      1%
+    Play#2 output Play#2 1    3,1    +      1%
+    Play#2 output Play#2 1   -4,2    g      1%
+    Play#2 output Play#2 1   -2,2    g      1%
+    Play#2 output Play#2 1    0,2    g      1%
+    Play#2 output Play#2 1    2,2    g      1%
+    Play#2 output Play#2 1   -3,3    +      1%
+    Play#2 output Play#2 1   -1,3    +      1%
+    Play#2 output Play#2 1    1,3    +      1%
+    Play#2 output Play#2 1    3,3    g      1%
+    Play#2 output Play#2 1 30 sectors
+    Play#2 output Play#2 6 0 552
+    Play#2 input budget
+    Play#2 command budget
+    Play#2 output Play#2 1 Sector Type			Production			    Cost
+    Play#2 output Play#2 1 bank             		10 bars   			     100
+    Play#2 output Play#2 1 Sector building			28 sectors      		     639
+    Play#2 output Play#2 1 Sector maintenance		1 sector        		      60
+    Play#2 output Play#2 1 Military payroll		0 mil, 108 res                        53
+    Play#2 output Play#2 1 Total expenses.......................................................852
+    Play#2 output Play#2 1 Income from taxes		3744 civs, 1054 uws                +1183
+    Play#2 output Play#2 1 Income from bars		10 bars                             +150
+    Play#2 output Play#2 1 Total income.......................................................+1333
+    Play#2 output Play#2 1 Balance forward						           34309
+    Play#2 output Play#2 1 Estimated delta						            +481
+    Play#2 output Play#2 1 Estimated new treasury.............................................34790
+    Play#2 output Play#2 6 0 551
+    Play#2 input nation
+    Play#2 command nation
+    Play#2 output Play#2 1
+    Play#2 output Play#2 1 (#2) 2 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#2 output Play#2 1 Nation status is ACTIVE     Bureaucratic Time Units: 551
+    Play#2 output Play#2 1 0% eff capital at 2,-2 has 50 civilians & 0 military
+    Play#2 output Play#2 1  The treasury has $34309.00     Military reserves: 108
+    Play#2 output Play#2 1 Education..........  0.00       Happiness.......  0.00
+    Play#2 output Play#2 1 Technology......... 20.23       Research........  5.47
+    Play#2 output Play#2 1 Technology factor : 31.89%     Plague factor :   0.00%
+    Play#2 output Play#2 1
+    Play#2 output Play#2 1 Max population : 1000
+    Play#2 output Play#2 1 Max safe population for civs/uws: 769/869
+    Play#2 output Play#2 1 No happiness needed
+    Play#2 output Play#2 6 0 551
+    Play#2 input __cmd added 3 1 0
+    Play#2 command __cmd
+    Play#2 output Play#2 6 0 552
     Play#2 input ctld
     Play#2 output Play#2 1 Bye-bye
     Play#2 logout 2
@@ -11313,6 +13007,78 @@
     Play#8 output Play#8 1   -1,1    j 100%   599  478l 0.80 $0     599i            599i             478
     Play#8 output Play#8 1    1,1    g  37%   516  185d 1.00 $0                                      185
     Play#8 output Play#8 1 24 sectors
+    Play#8 output Play#8 6 0 546
+    Play#8 input neweff *
+    Play#8 command neweff
+    Play#8 output Play#8 1 Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 EFFICIENCY SIMULATION
+    Play#8 output Play#8 1    sect  des    projected eff
+    Play#8 output Play#8 1   -6,-4   o    100%
+    Play#8 output Play#8 1   -4,-4   -     22%
+    Play#8 output Play#8 1    0,-4   k    100%
+    Play#8 output Play#8 1   -5,-3   o    100%
+    Play#8 output Play#8 1   -3,-3   -     12%
+    Play#8 output Play#8 1   -1,-3   g    100%
+    Play#8 output Play#8 1    1,-3   l    100%
+    Play#8 output Play#8 1   -4,-2   g    100%
+    Play#8 output Play#8 1   -2,-2   m    100%
+    Play#8 output Play#8 1    0,-2   m    100%
+    Play#8 output Play#8 1    2,-2   k    100%
+    Play#8 output Play#8 1    4,-2   j    100%
+    Play#8 output Play#8 1    6,-2   t    100%
+    Play#8 output Play#8 1   -3,-1   j    100%
+    Play#8 output Play#8 1   -1,-1   m    100%
+    Play#8 output Play#8 1    1,-1   m    100%
+    Play#8 output Play#8 1    3,-1   m    100%
+    Play#8 output Play#8 1    5,-1   g    100%
+    Play#8 output Play#8 1    7,-1   c     14%
+    Play#8 output Play#8 1   -2,0    g    100%
+    Play#8 output Play#8 1    0,0    m    100%
+    Play#8 output Play#8 1    2,0    m    100%
+    Play#8 output Play#8 1    4,0    b    100%
+    Play#8 output Play#8 1    6,0    h    100%
+    Play#8 output Play#8 1    8,0    i    100%
+    Play#8 output Play#8 1   -3,1    j    100%
+    Play#8 output Play#8 1   -1,1    j    100%
+    Play#8 output Play#8 1    1,1    g    100%
+    Play#8 output Play#8 1    3,1    w    100%
+    Play#8 output Play#8 1 29 sectors
+    Play#8 output Play#8 6 0 546
+    Play#8 input budget
+    Play#8 command budget
+    Play#8 output Play#8 1 Sector Type			Production			    Cost
+    Play#8 output Play#8 1 shell industry   		100 shells 			     618
+    Play#8 output Play#8 1 technical center 		23 tech   			    9000
+    Play#8 output Play#8 1 library/school   		300 edu    			    2700
+    Play#8 output Play#8 1 bank             		60 bars   			     600
+    Play#8 output Play#8 1 Sector building			11 sectors      		     773
+    Play#8 output Play#8 1 Sector maintenance		1 sector        		      60
+    Play#8 output Play#8 1 Military payroll		109 mil, 0 res                       548
+    Play#8 output Play#8 1 Total expenses.....................................................14299
+    Play#8 output Play#8 1 Income from taxes		19063 civs, 1042 uws               +7629
+    Play#8 output Play#8 1 Income from bars		244 bars                           +3660
+    Play#8 output Play#8 1 Total income......................................................+11289
+    Play#8 output Play#8 1 Balance forward						           24490
+    Play#8 output Play#8 1 Estimated delta						           -3010
+    Play#8 output Play#8 1 Estimated new treasury.............................................21480
+    Play#8 output Play#8 6 0 545
+    Play#8 input nation
+    Play#8 command nation
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 (#8) 8 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 Nation status is ACTIVE     Bureaucratic Time Units: 545
+    Play#8 output Play#8 1 9% eff capital at 7,-1 has 9 civilians & 0 military
+    Play#8 output Play#8 1  The treasury has $24490.00     Military reserves: 0
+    Play#8 output Play#8 1 Education.......... 38.12       Happiness.......  0.00
+    Play#8 output Play#8 1 Technology......... 29.54       Research........  5.47
+    Play#8 output Play#8 1 Technology factor : 34.65%     Plague factor :   0.00%
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 Max population : 1000
+    Play#8 output Play#8 1 Max safe population for civs/uws: 769/869
+    Play#8 output Play#8 1 Happiness needed is 12.45
+    Play#8 output Play#8 6 0 545
+    Play#8 input __cmd added 3 1 0
+    Play#8 command __cmd
     Play#8 output Play#8 6 0 546
     Play#8 input ctld
     Play#8 output Play#8 1 Bye-bye
@@ -12015,6 +13781,92 @@
     Play#1 output Play#1 1    5,3    p 100%   649   75  1.00 $675    75l            649l             649
     Play#1 output Play#1 1 24 sectors
     Play#1 output Play#1 6 0 625
+    Play#1 input neweff *
+    Play#1 command neweff
+    Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 EFFICIENCY SIMULATION
+    Play#1 output Play#1 1    sect  des    projected eff
+    Play#1 output Play#1 1    1,-3   j    100%
+    Play#1 output Play#1 1   -4,-2   k    100%
+    Play#1 output Play#1 1   -2,-2   j    100%
+    Play#1 output Play#1 1    0,-2   c    100%
+    Play#1 output Play#1 1    2,-2   %    100%
+    Play#1 output Play#1 1    4,-2   t    100%
+    Play#1 output Play#1 1    6,-2   l    100%
+    Play#1 output Play#1 1   -1,-1   b    100%
+    Play#1 output Play#1 1    1,-1   m    100%
+    Play#1 output Play#1 1    3,-1   m    100%
+    Play#1 output Play#1 1    5,-1   h    100%
+    Play#1 output Play#1 1    7,-1   =    100%
+    Play#1 output Play#1 1    9,-1   =    100%
+    Play#1 output Play#1 1   11,-1   )    100%
+    Play#1 output Play#1 1   -2,0    j    100%
+    Play#1 output Play#1 1    0,0    m    100%
+    Play#1 output Play#1 1    2,0    m    100%
+    Play#1 output Play#1 1    4,0    k    100%
+    Play#1 output Play#1 1   -1,1    k    100%
+    Play#1 output Play#1 1    1,1    m    100%
+    Play#1 output Play#1 1    3,1    m    100%
+    Play#1 output Play#1 1    5,1    j    100%
+    Play#1 output Play#1 1    7,1    d    100%
+    Play#1 output Play#1 1   -2,2    i    100%
+    Play#1 output Play#1 1    0,2    m    100%
+    Play#1 output Play#1 1    2,2    *    100%
+    Play#1 output Play#1 1    4,2    r    100%
+    Play#1 output Play#1 1    6,2    w    100%
+    Play#1 output Play#1 1    8,2    e    100%
+    Play#1 output Play#1 1   10,2    !    100%
+    Play#1 output Play#1 1   -1,3    o    100%
+    Play#1 output Play#1 1    1,3    +    100%
+    Play#1 output Play#1 1    5,3    p    100%
+    Play#1 output Play#1 1 33 sectors
+    Play#1 output Play#1 6 0 625
+    Play#1 input budget
+    Play#1 command budget
+    Play#1 output Play#1 1 Sector Type			Production			    Cost
+    Play#1 output Play#1 1 park             		75 happy  			     675
+    Play#1 output Play#1 1 defense plant    		8 guns   			     300
+    Play#1 output Play#1 1 shell industry   		152 shells 			     597
+    Play#1 output Play#1 1 technical center 		11 tech   			    4500
+    Play#1 output Play#1 1 research lab     		7 medical			     900
+    Play#1 output Play#1 1 library/school   		450 edu    			    4050
+    Play#1 output Play#1 1 bank             		60 bars   			     600
+    Play#1 output Play#1 1 refinery         		999 petrol 			     132
+    Play#1 output Play#1 1 enlistment center		33 mil    			      99
+    Play#1 output Play#1 1 Ship building			2 ships         		    1440
+    Play#1 output Play#1 1 Ship maintenance		5 ships         		     210
+    Play#1 output Play#1 1 Plane building			3 planes        		    1080
+    Play#1 output Play#1 1 Plane maintenance		3 planes        		     147
+    Play#1 output Play#1 1 Unit maintenance		4 units         		     138
+    Play#1 output Play#1 1 Sector building			1 sector        		     125
+    Play#1 output Play#1 1 Sector maintenance		1 sector        		      60
+    Play#1 output Play#1 1 Military payroll		211 mil, 28 res                     1071
+    Play#1 output Play#1 1 Total expenses.....................................................16124
+    Play#1 output Play#1 1 Income from taxes		30719 civs, 1492 uws              +15503
+    Play#1 output Play#1 1 Income from bars		397 bars                           +5955
+    Play#1 output Play#1 1 Total income......................................................+21458
+    Play#1 output Play#1 1 Balance forward						           45635
+    Play#1 output Play#1 1 Estimated delta						           +5334
+    Play#1 output Play#1 1 Estimated new treasury.............................................50969
+    Play#1 output Play#1 6 0 624
+    Play#1 input nation
+    Play#1 command nation
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 (#1) 1 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 Nation status is ACTIVE     Bureaucratic Time Units: 624
+    Play#1 output Play#1 1 100% eff capital at 0,-2 has 769 civilians & 0 military
+    Play#1 output Play#1 1  The treasury has $45635.00     Military reserves: 28
+    Play#1 output Play#1 1 Education.......... 34.99       Happiness....... 11.79
+    Play#1 output Play#1 1 Technology......... 51.79       Research........ 14.53
+    Play#1 output Play#1 1 Technology factor : 40.43%     Plague factor :   0.00%
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 Max population : 1000
+    Play#1 output Play#1 1 Max safe population for civs/uws: 769/869
+    Play#1 output Play#1 1 Happiness needed is 11.96
+    Play#1 output Play#1 6 0 624
+    Play#1 input __cmd added 3 1 0
+    Play#1 command __cmd
+    Play#1 output Play#1 6 0 625
     Play#1 input ctld
     Play#1 output Play#1 1 Bye-bye
     Play#1 logout 1
@@ -12154,6 +14006,76 @@
     Play#2 output Play#2 1    0,0    m 100%   998  998i 1.00 $0                                      998
     Play#2 output Play#2 1    2,0    m 100%   998  998i 1.00 $0                                      998
     Play#2 output Play#2 1 8 sectors
+    Play#2 output Play#2 6 0 618
+    Play#2 input neweff *
+    Play#2 command neweff
+    Play#2 output Play#2 1 Thu Jan  1 00:00:00 1970
+    Play#2 output Play#2 1 EFFICIENCY SIMULATION
+    Play#2 output Play#2 1    sect  des    projected eff
+    Play#2 output Play#2 1   -6,-2   +      0%
+    Play#2 output Play#2 1   -4,-2   w    100%
+    Play#2 output Play#2 1    2,-2   c     49%
+    Play#2 output Play#2 1   -7,-1   +      0%
+    Play#2 output Play#2 1   -5,-1   j    100%
+    Play#2 output Play#2 1   -1,-1   o    100%
+    Play#2 output Play#2 1    1,-1   b    100%
+    Play#2 output Play#2 1    3,-1   g    100%
+    Play#2 output Play#2 1    5,-1   g    100%
+    Play#2 output Play#2 1    7,-1   g    100%
+    Play#2 output Play#2 1   -6,0    g      3%
+    Play#2 output Play#2 1   -4,0    g      3%
+    Play#2 output Play#2 1   -2,0    g      2%
+    Play#2 output Play#2 1    0,0    m    100%
+    Play#2 output Play#2 1    2,0    m    100%
+    Play#2 output Play#2 1    4,0    +      3%
+    Play#2 output Play#2 1   -7,1    +      0%
+    Play#2 output Play#2 1   -5,1    +      3%
+    Play#2 output Play#2 1   -3,1    g      2%
+    Play#2 output Play#2 1   -1,1    g      3%
+    Play#2 output Play#2 1    1,1    g      3%
+    Play#2 output Play#2 1    3,1    +      3%
+    Play#2 output Play#2 1   -4,2    g      2%
+    Play#2 output Play#2 1   -2,2    g      3%
+    Play#2 output Play#2 1    0,2    g      2%
+    Play#2 output Play#2 1    2,2    g      3%
+    Play#2 output Play#2 1   -3,3    +      3%
+    Play#2 output Play#2 1   -1,3    +      2%
+    Play#2 output Play#2 1    1,3    +      2%
+    Play#2 output Play#2 1    3,3    g      2%
+    Play#2 output Play#2 1 30 sectors
+    Play#2 output Play#2 6 0 618
+    Play#2 input budget
+    Play#2 command budget
+    Play#2 output Play#2 1 Sector Type			Production			    Cost
+    Play#2 output Play#2 1 bank             		60 bars   			     600
+    Play#2 output Play#2 1 Sector building			24 sectors      		     281
+    Play#2 output Play#2 1 Sector maintenance		1 sector        		      60
+    Play#2 output Play#2 1 Military payroll		0 mil, 106 res                        52
+    Play#2 output Play#2 1 Total expenses.......................................................993
+    Play#2 output Play#2 1 Income from taxes		4865 civs, 1212 uws                +2315
+    Play#2 output Play#2 1 Income from bars		20 bars                             +300
+    Play#2 output Play#2 1 Total income.......................................................+2615
+    Play#2 output Play#2 1 Balance forward						           34790
+    Play#2 output Play#2 1 Estimated delta						           +1622
+    Play#2 output Play#2 1 Estimated new treasury.............................................36412
+    Play#2 output Play#2 6 0 617
+    Play#2 input nation
+    Play#2 command nation
+    Play#2 output Play#2 1
+    Play#2 output Play#2 1 (#2) 2 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#2 output Play#2 1 Nation status is ACTIVE     Bureaucratic Time Units: 617
+    Play#2 output Play#2 1 20% eff capital at 2,-2 has 50 civilians & 0 military
+    Play#2 output Play#2 1  The treasury has $34790.00     Military reserves: 106
+    Play#2 output Play#2 1 Education..........  0.00       Happiness.......  0.00
+    Play#2 output Play#2 1 Technology......... 22.58       Research........  7.26
+    Play#2 output Play#2 1 Technology factor : 32.61%     Plague factor :   0.00%
+    Play#2 output Play#2 1
+    Play#2 output Play#2 1 Max population : 1000
+    Play#2 output Play#2 1 Max safe population for civs/uws: 769/869
+    Play#2 output Play#2 1 No happiness needed
+    Play#2 output Play#2 6 0 617
+    Play#2 input __cmd added 3 1 0
+    Play#2 command __cmd
     Play#2 output Play#2 6 0 618
     Play#2 input ctld
     Play#2 output Play#2 1 Bye-bye
@@ -12365,6 +14287,79 @@
     Play#8 output Play#8 1   -1,1    j 100%   599  494l 0.82 $0     599i            599i             494
     Play#8 output Play#8 1    1,1    k 100%   474    0h 0.82 $0       0i            474i             195
     Play#8 output Play#8 1 21 sectors
+    Play#8 output Play#8 6 0 616
+    Play#8 input neweff *
+    Play#8 command neweff
+    Play#8 output Play#8 1 Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 EFFICIENCY SIMULATION
+    Play#8 output Play#8 1    sect  des    projected eff
+    Play#8 output Play#8 1   -6,-4   f    100%
+    Play#8 output Play#8 1   -4,-4   -    100%
+    Play#8 output Play#8 1    0,-4   k    100%
+    Play#8 output Play#8 1   -5,-3   o    100%
+    Play#8 output Play#8 1   -3,-3   -    100%
+    Play#8 output Play#8 1   -1,-3   !    100%
+    Play#8 output Play#8 1    1,-3   l    100%
+    Play#8 output Play#8 1   -4,-2   *    100%
+    Play#8 output Play#8 1   -2,-2   m    100%
+    Play#8 output Play#8 1    0,-2   m    100%
+    Play#8 output Play#8 1    2,-2   k    100%
+    Play#8 output Play#8 1    4,-2   j    100%
+    Play#8 output Play#8 1    6,-2   t    100%
+    Play#8 output Play#8 1   -3,-1   j    100%
+    Play#8 output Play#8 1   -1,-1   m    100%
+    Play#8 output Play#8 1    1,-1   m    100%
+    Play#8 output Play#8 1    3,-1   m    100%
+    Play#8 output Play#8 1    5,-1   d    100%
+    Play#8 output Play#8 1    7,-1   c    100%
+    Play#8 output Play#8 1   -2,0    p    100%
+    Play#8 output Play#8 1    0,0    m    100%
+    Play#8 output Play#8 1    2,0    m    100%
+    Play#8 output Play#8 1    4,0    b    100%
+    Play#8 output Play#8 1    6,0    h    100%
+    Play#8 output Play#8 1    8,0    i    100%
+    Play#8 output Play#8 1   -3,1    j    100%
+    Play#8 output Play#8 1   -1,1    j    100%
+    Play#8 output Play#8 1    1,1    k    100%
+    Play#8 output Play#8 1    3,1    w    100%
+    Play#8 output Play#8 1 29 sectors
+    Play#8 output Play#8 6 0 616
+    Play#8 input budget
+    Play#8 command budget
+    Play#8 output Play#8 1 Sector Type			Production			    Cost
+    Play#8 output Play#8 1 defense plant    		6 guns   			     300
+    Play#8 output Play#8 1 shell industry   		132 shells 			     630
+    Play#8 output Play#8 1 technical center 		23 tech   			    9000
+    Play#8 output Play#8 1 library/school   		300 edu    			    2700
+    Play#8 output Play#8 1 bank             		60 bars   			     600
+    Play#8 output Play#8 1 Sector building			9 sectors       		    1236
+    Play#8 output Play#8 1 Sector maintenance		1 sector        		      60
+    Play#8 output Play#8 1 Military payroll		109 mil, 0 res                       548
+    Play#8 output Play#8 1 Total expenses.....................................................15074
+    Play#8 output Play#8 1 Income from taxes		24785 civs, 1197 uws              +11535
+    Play#8 output Play#8 1 Income from bars		304 bars                           +4560
+    Play#8 output Play#8 1 Total income......................................................+16095
+    Play#8 output Play#8 1 Balance forward						           21480
+    Play#8 output Play#8 1 Estimated delta						           +1021
+    Play#8 output Play#8 1 Estimated new treasury.............................................22501
+    Play#8 output Play#8 6 0 615
+    Play#8 input nation
+    Play#8 command nation
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 (#8) 8 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 Nation status is ACTIVE     Bureaucratic Time Units: 615
+    Play#8 output Play#8 1 14% eff capital at 7,-1 has 769 civilians & 0 military
+    Play#8 output Play#8 1  The treasury has $21480.00     Military reserves: 0
+    Play#8 output Play#8 1 Education.......... 40.19       Happiness.......  0.00
+    Play#8 output Play#8 1 Technology......... 37.06       Research........  7.26
+    Play#8 output Play#8 1 Technology factor : 36.73%     Plague factor :   0.00%
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 Max population : 1000
+    Play#8 output Play#8 1 Max safe population for civs/uws: 769/869
+    Play#8 output Play#8 1 Happiness needed is 13.32
+    Play#8 output Play#8 6 0 615
+    Play#8 input __cmd added 3 1 0
+    Play#8 command __cmd
     Play#8 output Play#8 6 0 616
     Play#8 input ctld
     Play#8 output Play#8 1 Bye-bye
@@ -13134,6 +15129,89 @@
     Play#1 output Play#1 1    5,3    p 100%   650   75  1.00 $675    75l            650l             650
     Play#1 output Play#1 1 24 sectors
     Play#1 output Play#1 6 0 611
+    Play#1 input neweff *
+    Play#1 command neweff
+    Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 EFFICIENCY SIMULATION
+    Play#1 output Play#1 1    sect  des    projected eff
+    Play#1 output Play#1 1    1,-3   j    100%
+    Play#1 output Play#1 1   -4,-2   k    100%
+    Play#1 output Play#1 1   -2,-2   j    100%
+    Play#1 output Play#1 1    0,-2   c    100%
+    Play#1 output Play#1 1    2,-2   %    100%
+    Play#1 output Play#1 1    4,-2   t    100%
+    Play#1 output Play#1 1    6,-2   l    100%
+    Play#1 output Play#1 1   -1,-1   b    100%
+    Play#1 output Play#1 1    1,-1   m    100%
+    Play#1 output Play#1 1    3,-1   m    100%
+    Play#1 output Play#1 1    5,-1   h    100%
+    Play#1 output Play#1 1    7,-1   =    100%
+    Play#1 output Play#1 1    9,-1   =    100%
+    Play#1 output Play#1 1   11,-1   )    100%
+    Play#1 output Play#1 1   -2,0    j    100%
+    Play#1 output Play#1 1    0,0    m    100%
+    Play#1 output Play#1 1    2,0    m    100%
+    Play#1 output Play#1 1    4,0    k    100%
+    Play#1 output Play#1 1   -1,1    k    100%
+    Play#1 output Play#1 1    1,1    m    100%
+    Play#1 output Play#1 1    3,1    m    100%
+    Play#1 output Play#1 1    5,1    j    100%
+    Play#1 output Play#1 1    7,1    d    100%
+    Play#1 output Play#1 1   -2,2    i    100%
+    Play#1 output Play#1 1    0,2    m    100%
+    Play#1 output Play#1 1    2,2    *    100%
+    Play#1 output Play#1 1    4,2    r    100%
+    Play#1 output Play#1 1    6,2    w    100%
+    Play#1 output Play#1 1    8,2    e    100%
+    Play#1 output Play#1 1   10,2    !    100%
+    Play#1 output Play#1 1   -1,3    o    100%
+    Play#1 output Play#1 1    1,3    +    100%
+    Play#1 output Play#1 1    5,3    p    100%
+    Play#1 output Play#1 1 33 sectors
+    Play#1 output Play#1 6 0 611
+    Play#1 input budget
+    Play#1 command budget
+    Play#1 output Play#1 1 Sector Type			Production			    Cost
+    Play#1 output Play#1 1 park             		75 happy  			     675
+    Play#1 output Play#1 1 defense plant    		8 guns   			     300
+    Play#1 output Play#1 1 shell industry   		159 shells 			     600
+    Play#1 output Play#1 1 technical center 		11 tech   			    4500
+    Play#1 output Play#1 1 research lab     		8 medical			     900
+    Play#1 output Play#1 1 library/school   		450 edu    			    4050
+    Play#1 output Play#1 1 refinery         		453 petrol 			      57
+    Play#1 output Play#1 1 enlistment center		33 mil    			      99
+    Play#1 output Play#1 1 Ship maintenance		5 ships         		     210
+    Play#1 output Play#1 1 Plane maintenance		3 planes        		     147
+    Play#1 output Play#1 1 Unit maintenance		4 units         		     138
+    Play#1 output Play#1 1 Sector building			1 sector        		      10
+    Play#1 output Play#1 1 Sector maintenance		1 sector        		      60
+    Play#1 output Play#1 1 Military payroll		233 mil, 28 res                     1181
+    Play#1 output Play#1 1 Total expenses.....................................................12927
+    Play#1 output Play#1 1 Income from taxes		29648 civs, 1717 uws              +14960
+    Play#1 output Play#1 1 Income from bars		457 bars                           +6855
+    Play#1 output Play#1 1 Total income......................................................+21815
+    Play#1 output Play#1 1 Balance forward						           50970
+    Play#1 output Play#1 1 Estimated delta						           +8888
+    Play#1 output Play#1 1 Estimated new treasury.............................................59858
+    Play#1 output Play#1 6 0 610
+    Play#1 input nation
+    Play#1 command nation
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 (#1) 1 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#1 output Play#1 1 Nation status is ACTIVE     Bureaucratic Time Units: 610
+    Play#1 output Play#1 1 100% eff capital at 0,-2 has 999 civilians & 0 military
+    Play#1 output Play#1 1  The treasury has $50970.00     Military reserves: 28
+    Play#1 output Play#1 1 Education.......... 37.04       Happiness....... 11.95
+    Play#1 output Play#1 1 Technology......... 58.69       Research........ 18.12
+    Play#1 output Play#1 1 Technology factor : 42.02%     Plague factor :   0.00%
+    Play#1 output Play#1 1
+    Play#1 output Play#1 1 Max population : 1000
+    Play#1 output Play#1 1 Max safe population for civs/uws: 769/869
+    Play#1 output Play#1 1 Happiness needed is 12.81
+    Play#1 output Play#1 6 0 610
+    Play#1 input __cmd added 3 1 0
+    Play#1 command __cmd
+    Play#1 output Play#1 6 0 611
     Play#1 input ctld
     Play#1 output Play#1 1 Bye-bye
     Play#1 logout 1
@@ -13290,6 +15368,77 @@
     Play#2 output Play#2 1    0,0    m 100%   998  998i 1.00 $0                                      998
     Play#2 output Play#2 1    2,0    m 100%   998  998i 1.00 $0                                      998
     Play#2 output Play#2 1 10 sectors
+    Play#2 output Play#2 6 0 629
+    Play#2 input neweff *
+    Play#2 command neweff
+    Play#2 output Play#2 1 Thu Jan  1 00:00:00 1970
+    Play#2 output Play#2 1 EFFICIENCY SIMULATION
+    Play#2 output Play#2 1    sect  des    projected eff
+    Play#2 output Play#2 1   -6,-2   +      0%
+    Play#2 output Play#2 1   -4,-2   w    100%
+    Play#2 output Play#2 1    2,-2   c     83%
+    Play#2 output Play#2 1   -7,-1   +      1%
+    Play#2 output Play#2 1   -5,-1   j    100%
+    Play#2 output Play#2 1   -1,-1   o    100%
+    Play#2 output Play#2 1    1,-1   b    100%
+    Play#2 output Play#2 1    3,-1   l     92%
+    Play#2 output Play#2 1    5,-1   k    100%
+    Play#2 output Play#2 1    7,-1   g    100%
+    Play#2 output Play#2 1   -6,0    g    100%
+    Play#2 output Play#2 1   -4,0    g    100%
+    Play#2 output Play#2 1   -2,0    g      4%
+    Play#2 output Play#2 1    0,0    m    100%
+    Play#2 output Play#2 1    2,0    m    100%
+    Play#2 output Play#2 1    4,0    +      4%
+    Play#2 output Play#2 1   -7,1    +      0%
+    Play#2 output Play#2 1   -5,1    +      4%
+    Play#2 output Play#2 1   -3,1    g      3%
+    Play#2 output Play#2 1   -1,1    g      4%
+    Play#2 output Play#2 1    1,1    g      4%
+    Play#2 output Play#2 1    3,1    +      6%
+    Play#2 output Play#2 1   -4,2    g      4%
+    Play#2 output Play#2 1   -2,2    g      4%
+    Play#2 output Play#2 1    0,2    g      3%
+    Play#2 output Play#2 1    2,2    g      6%
+    Play#2 output Play#2 1   -3,3    +      4%
+    Play#2 output Play#2 1   -1,3    +      4%
+    Play#2 output Play#2 1    1,3    +      4%
+    Play#2 output Play#2 1    3,3    g      4%
+    Play#2 output Play#2 1 30 sectors
+    Play#2 output Play#2 6 0 629
+    Play#2 input budget
+    Play#2 command budget
+    Play#2 output Play#2 1 Sector Type			Production			    Cost
+    Play#2 output Play#2 1 library/school   		107 edu    			     963
+    Play#2 output Play#2 1 bank             		60 bars   			     600
+    Play#2 output Play#2 1 Sector building			23 sectors      		     505
+    Play#2 output Play#2 1 Sector maintenance		1 sector        		      60
+    Play#2 output Play#2 1 Military payroll		0 mil, 103 res                        51
+    Play#2 output Play#2 1 Total expenses......................................................2179
+    Play#2 output Play#2 1 Income from taxes		6325 civs, 1394 uws                +2636
+    Play#2 output Play#2 1 Income from bars		80 bars                            +1200
+    Play#2 output Play#2 1 Total income.......................................................+3836
+    Play#2 output Play#2 1 Balance forward						           36411
+    Play#2 output Play#2 1 Estimated delta						           +1657
+    Play#2 output Play#2 1 Estimated new treasury.............................................38068
+    Play#2 output Play#2 6 0 628
+    Play#2 input nation
+    Play#2 command nation
+    Play#2 output Play#2 1
+    Play#2 output Play#2 1 (#2) 2 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#2 output Play#2 1 Nation status is ACTIVE     Bureaucratic Time Units: 628
+    Play#2 output Play#2 1 49% eff capital at 2,-2 has 50 civilians & 0 military
+    Play#2 output Play#2 1  The treasury has $36411.00     Military reserves: 103
+    Play#2 output Play#2 1 Education..........  0.00       Happiness.......  0.00
+    Play#2 output Play#2 1 Technology......... 24.94       Research........  9.06
+    Play#2 output Play#2 1 Technology factor : 33.31%     Plague factor :   0.00%
+    Play#2 output Play#2 1
+    Play#2 output Play#2 1 Max population : 1000
+    Play#2 output Play#2 1 Max safe population for civs/uws: 769/869
+    Play#2 output Play#2 1 No happiness needed
+    Play#2 output Play#2 6 0 628
+    Play#2 input __cmd added 3 1 0
+    Play#2 command __cmd
     Play#2 output Play#2 6 0 629
     Play#2 input ctld
     Play#2 output Play#2 1 Bye-bye
@@ -13459,6 +15608,79 @@
     Play#8 output Play#8 1   -1,1    j 100%   599  506l 0.85 $0     599i            599i             506
     Play#8 output Play#8 1    1,1    k 100%   649  274h 0.85 $0     648i            648i             274
     Play#8 output Play#8 1 22 sectors
+    Play#8 output Play#8 6 0 637
+    Play#8 input neweff *
+    Play#8 command neweff
+    Play#8 output Play#8 1 Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 EFFICIENCY SIMULATION
+    Play#8 output Play#8 1    sect  des    projected eff
+    Play#8 output Play#8 1   -6,-4   f    100%
+    Play#8 output Play#8 1   -4,-4   o    100%
+    Play#8 output Play#8 1    0,-4   k    100%
+    Play#8 output Play#8 1   -5,-3   o    100%
+    Play#8 output Play#8 1   -3,-3   -    100%
+    Play#8 output Play#8 1   -1,-3   !    100%
+    Play#8 output Play#8 1    1,-3   l    100%
+    Play#8 output Play#8 1   -4,-2   *    100%
+    Play#8 output Play#8 1   -2,-2   m    100%
+    Play#8 output Play#8 1    0,-2   m    100%
+    Play#8 output Play#8 1    2,-2   k    100%
+    Play#8 output Play#8 1    4,-2   j    100%
+    Play#8 output Play#8 1    6,-2   t    100%
+    Play#8 output Play#8 1   -3,-1   j    100%
+    Play#8 output Play#8 1   -1,-1   m    100%
+    Play#8 output Play#8 1    1,-1   m    100%
+    Play#8 output Play#8 1    3,-1   m    100%
+    Play#8 output Play#8 1    5,-1   d    100%
+    Play#8 output Play#8 1    7,-1   c    100%
+    Play#8 output Play#8 1   -2,0    p    100%
+    Play#8 output Play#8 1    0,0    m    100%
+    Play#8 output Play#8 1    2,0    m    100%
+    Play#8 output Play#8 1    4,0    b    100%
+    Play#8 output Play#8 1    6,0    h    100%
+    Play#8 output Play#8 1    8,0    i    100%
+    Play#8 output Play#8 1   -3,1    j    100%
+    Play#8 output Play#8 1   -1,1    j    100%
+    Play#8 output Play#8 1    1,1    k    100%
+    Play#8 output Play#8 1    3,1    w    100%
+    Play#8 output Play#8 1 29 sectors
+    Play#8 output Play#8 6 0 637
+    Play#8 input budget
+    Play#8 command budget
+    Play#8 output Play#8 1 Sector Type			Production			    Cost
+    Play#8 output Play#8 1 park             		75 happy  			     675
+    Play#8 output Play#8 1 shell industry   		61 shells 			     258
+    Play#8 output Play#8 1 technical center 		23 tech   			    9000
+    Play#8 output Play#8 1 library/school   		400 edu    			    3600
+    Play#8 output Play#8 1 bank             		60 bars   			     600
+    Play#8 output Play#8 1 Sector building			2 sectors       		     170
+    Play#8 output Play#8 1 Sector maintenance		1 sector        		      60
+    Play#8 output Play#8 1 Military payroll		104 mil, 0 res                       523
+    Play#8 output Play#8 1 Total expenses.....................................................14886
+    Play#8 output Play#8 1 Income from taxes		28899 civs, 1376 uws              +14541
+    Play#8 output Play#8 1 Income from bars		364 bars                           +5460
+    Play#8 output Play#8 1 Total income......................................................+20001
+    Play#8 output Play#8 1 Balance forward						           22501
+    Play#8 output Play#8 1 Estimated delta						           +5115
+    Play#8 output Play#8 1 Estimated new treasury.............................................27616
+    Play#8 output Play#8 6 0 636
+    Play#8 input nation
+    Play#8 command nation
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 (#8) 8 Nation Report	Thu Jan  1 00:00:00 1970
+    Play#8 output Play#8 1 Nation status is ACTIVE     Bureaucratic Time Units: 636
+    Play#8 output Play#8 1 100% eff capital at 7,-1 has 769 civilians & 0 military
+    Play#8 output Play#8 1  The treasury has $22501.00     Military reserves: 0
+    Play#8 output Play#8 1 Education.......... 39.81       Happiness.......  0.00
+    Play#8 output Play#8 1 Technology......... 44.58       Research........  9.06
+    Play#8 output Play#8 1 Technology factor : 38.67%     Plague factor :   0.00%
+    Play#8 output Play#8 1
+    Play#8 output Play#8 1 Max population : 1000
+    Play#8 output Play#8 1 Max safe population for civs/uws: 769/869
+    Play#8 output Play#8 1 Happiness needed is 13.38
+    Play#8 output Play#8 6 0 636
+    Play#8 input __cmd added 3 1 0
+    Play#8 command __cmd
     Play#8 output Play#8 6 0 637
     Play#8 input ctld
     Play#8 output Play#8 1 Bye-bye
