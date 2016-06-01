@@ -45,7 +45,7 @@
 static int growfood(struct sctstr *, short *, int, int);
 static int starve_some(short *, i_type, int);
 static void trunc_people(struct sctstr *, struct natstr *, short *);
-static int grow_people(struct sctstr *, int, struct natstr *, int *, int,
+static int grow_people(struct sctstr *, int, struct natstr *,
 		       short *);
 static int babies(int, int, double, int, int);
 
@@ -105,7 +105,12 @@ do_feed(struct sctstr *sp, struct natstr *np, short *vec,
 		sctwork = 100;
 	    if (!player->simulation)
 		sp->sct_work = sctwork;
-	    grow_people(sp, etu, np, &work_avail, sctwork, vec);
+	    grow_people(sp, etu, np, vec);
+	    work_avail = new_work(sp,
+				  total_work(sctwork, etu,
+					     vec[I_CIVIL], vec[I_MILIT],
+					     vec[I_UW], maxworkers));
+	    /* FIXME restores work charged for growfood() */
 	    /* age che */
 	    if (!player->simulation)
 		sp->sct_che = age_people(sp->sct_che, etu);
@@ -230,7 +235,7 @@ trunc_people(struct sctstr *sp, struct natstr *np, short *vec)
  */
 static int
 grow_people(struct sctstr *sp, int etu,
-	    struct natstr *np, int *workp, int sctwork,
+	    struct natstr *np,
 	    short *vec)
 {
     int newciv;
@@ -247,7 +252,6 @@ grow_people(struct sctstr *sp, int etu,
      */
     if (opt_NOFOOD == 0 && (newciv || newuw))
 	vec[I_FOOD] -= roundavg((newciv + newuw) * babyeat);
-    *workp += total_work(sctwork, etu, newciv, 0, newuw, ITEM_MAX);
     return newciv + newuw;
 }
 
