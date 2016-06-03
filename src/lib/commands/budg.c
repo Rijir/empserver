@@ -229,7 +229,7 @@ calc_all(int p_sect[][2],
     *lmaint = lnd_money[player->cnum];
 
     /* Produce */
-    produce_sect(player->cnum, etu, bp, p_sect);
+    produce_sect(np, etu, bp, p_sect);
 
     /* Build ships */
     sea_money[player->cnum] = 0;
