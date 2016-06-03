@@ -8804,7 +8804,7 @@
     Play#1 output Play#1 1 Sector Type			Production			    Cost
     Play#1 output Play#1 1 park             		75 happy  			     675
     Play#1 output Play#1 1 defense plant    		5 guns   			     300
-    Play#1 output Play#1 1 shell industry   		86 shells 			     600
+    Play#1 output Play#1 1 shell industry   		85 shells 			     600
     Play#1 output Play#1 1 technical center 		11 tech   			    4500
     Play#1 output Play#1 1 research lab     		7 medical			     900
     Play#1 output Play#1 1 library/school   		250 edu    			    2250
@@ -12422,7 +12422,7 @@
     Play#1 command budget
     Play#1 output Play#1 1 Sector Type			Production			    Cost
     Play#1 output Play#1 1 park             		75 happy  			     675
-    Play#1 output Play#1 1 defense plant    		7 guns   			     300
+    Play#1 output Play#1 1 defense plant    		8 guns   			     300
     Play#1 output Play#1 1 shell industry   		143 shells 			     600
     Play#1 output Play#1 1 technical center 		11 tech   			    4500
     Play#1 output Play#1 1 research lab     		7 medical			     900
@@ -13052,7 +13052,7 @@
     Play#8 input budget
     Play#8 command budget
     Play#8 output Play#8 1 Sector Type			Production			    Cost
-    Play#8 output Play#8 1 shell industry   		102 shells 			     621
+    Play#8 output Play#8 1 shell industry   		101 shells 			     621
     Play#8 output Play#8 1 technical center 		23 tech   			    9000
     Play#8 output Play#8 1 library/school   		300 edu    			    2700
     Play#8 output Play#8 1 bank             		60 bars   			     600
@@ -13831,12 +13831,12 @@
     Play#1 output Play#1 1 Sector Type			Production			    Cost
     Play#1 output Play#1 1 park             		75 happy  			     675
     Play#1 output Play#1 1 defense plant    		8 guns   			     300
-    Play#1 output Play#1 1 shell industry   		153 shells 			     600
+    Play#1 output Play#1 1 shell industry   		152 shells 			     600
     Play#1 output Play#1 1 technical center 		11 tech   			    4500
     Play#1 output Play#1 1 research lab     		8 medical			     900
     Play#1 output Play#1 1 library/school   		450 edu    			    4050
     Play#1 output Play#1 1 bank             		60 bars   			     600
-    Play#1 output Play#1 1 refinery         		999 petrol 			     132
+    Play#1 output Play#1 1 refinery         		999 petrol 			     131
     Play#1 output Play#1 1 enlistment center		33 mil    			      99
     Play#1 output Play#1 1 Ship building			2 ships         		    1440
     Play#1 output Play#1 1 Ship maintenance		5 ships         		     210
@@ -13846,13 +13846,13 @@
     Play#1 output Play#1 1 Sector building			1 sector        		     125
     Play#1 output Play#1 1 Sector maintenance		1 sector        		      60
     Play#1 output Play#1 1 Military payroll		207 mil, 29 res                     1052
-    Play#1 output Play#1 1 Total expenses.....................................................16108
+    Play#1 output Play#1 1 Total expenses.....................................................16107
     Play#1 output Play#1 1 Income from taxes		30719 civs, 1480 uws              +15502
     Play#1 output Play#1 1 Income from bars		397 bars                           +5955
     Play#1 output Play#1 1 Total income......................................................+21457
     Play#1 output Play#1 1 Balance forward						           45856
-    Play#1 output Play#1 1 Estimated delta						           +5349
-    Play#1 output Play#1 1 Estimated new treasury.............................................51205
+    Play#1 output Play#1 1 Estimated delta						           +5350
+    Play#1 output Play#1 1 Estimated new treasury.............................................51206
     Play#1 output Play#1 6 0 624
     Play#1 input nation
     Play#1 command nation
@@ -15654,7 +15654,7 @@
     Play#8 command budget
     Play#8 output Play#8 1 Sector Type			Production			    Cost
     Play#8 output Play#8 1 park             		75 happy  			     675
-    Play#8 output Play#8 1 shell industry   		64 shells 			     267
+    Play#8 output Play#8 1 shell industry   		63 shells 			     267
     Play#8 output Play#8 1 technical center 		23 tech   			    9000
     Play#8 output Play#8 1 library/school   		400 edu    			    3600
     Play#8 output Play#8 1 bank             		60 bars   			     600
