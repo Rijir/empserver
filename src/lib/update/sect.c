@@ -44,7 +44,7 @@
 #include "ship.h"
 #include "update.h"
 
-static int
+int
 upd_buildeff(struct sctstr *sp)
 {
     int work_cost = 0;
