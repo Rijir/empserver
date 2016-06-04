@@ -29,7 +29,7 @@
  *  Known contributors to this file:
  *     Dave Pare, 1989
  *     Steve McClure, 1996
- *     Markus Armbruster, 2004-2014
+ *     Markus Armbruster, 2004-2016
  */
 
 #include <config.h>
@@ -78,7 +78,7 @@ sct_prewrite(int id, void *old, void *new)
     own = sp->sct_own;
     prev_own = oldsp->sct_own;
 
-    if (own && !civs) {
+    if (!civs) {
 	sp->sct_work = 100;
 	sp->sct_oldown = own;
     }
