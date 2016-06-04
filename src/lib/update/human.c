@@ -42,17 +42,19 @@
 #include "update.h"
 #include "xy.h"
 
+static int new_work(struct sctstr *, int);
 static int growfood(struct sctstr *, int, int);
 static int starve_some(short *, i_type, int);
 static void trunc_people(struct sctstr *, struct natstr *);
-static int grow_people(struct sctstr *, int, struct natstr *);
-static int babies(int, int, double, int, int);
+static int grow_people(struct sctstr *, int, struct natstr *, int);
+static int babies(int, int, double, int, int, int);
 
 /*
  * feed the individual sector
  */
 void
-do_feed(struct sctstr *sp, struct natstr *np, int etu)
+do_feed(struct sctstr *sp, struct natstr *np, int etu,
+	int round_babies_down)
 {
     int work_avail;
     int starved;
@@ -101,7 +103,7 @@ do_feed(struct sctstr *sp, struct natstr *np, int etu)
 		sp->sct_work = sp->sct_work + 7 + roll(15);
 	    if (sp->sct_work > 100)
 		sp->sct_work = 100;
-	    grow_people(sp, etu, np);
+	    grow_people(sp, etu, np, round_babies_down);
 	    work_avail = new_work(sp,
 				  total_work(sp->sct_work, etu,
 					     sp->sct_item[I_CIVIL],
@@ -124,7 +126,7 @@ do_feed(struct sctstr *sp, struct natstr *np, int etu)
 	sp->sct_avail = work_avail;
 }
 
-int
+static int
 new_work(struct sctstr *sp, int delta)
 {
     if (sp->sct_type == sp->sct_newtype)
@@ -231,17 +233,17 @@ trunc_people(struct sctstr *sp, struct natstr *np)
  * production?  Maybe with just high education?
  */
 static int
-grow_people(struct sctstr *sp, int etu, struct natstr *np)
+grow_people(struct sctstr *sp, int etu, struct natstr *np, int round_down)
 {
     int newciv;
     int newuw;
     int maxpop = max_pop(np->nat_level[NAT_RLEV], sp);
 
     newciv = babies(sp->sct_item[I_CIVIL], etu, obrate,
-		    sp->sct_item[I_FOOD], maxpop);
+		    sp->sct_item[I_FOOD], maxpop, round_down);
     sp->sct_item[I_CIVIL] += newciv;
     newuw = babies(sp->sct_item[I_UW], etu, uwbrate,
-		   sp->sct_item[I_FOOD], maxpop);
+		   sp->sct_item[I_FOOD], maxpop, round_down);
     sp->sct_item[I_UW] += newuw;
     /*
      * subtract the baby eat food (if we are using FOOD) and return
@@ -257,24 +259,28 @@ grow_people(struct sctstr *sp, int etu, struct natstr *np)
  * @brate is the birth rate.
  * @food is the food available for growing babies.
  * @maxpop is the population limit.
+ * If @round_down, discard fractions instead of rounding them
+ * randomly.
  */
 static int
-babies(int adults, int etu, double brate, int food, int maxpop)
+babies(int adults, int etu, double brate, int food, int maxpop,
+       int round_down)
 {
-    int new_birth, new_food, new;
+    double new_birth;
+    int new_food, new;
 
     if (adults >= maxpop)
 	return 0;
 
-    new_birth = roundavg(brate * etu * adults);
-    if (opt_NOFOOD)
-	new_food = new_birth;
-    else
-	new_food = (int)(food / (2.0 * babyeat));
+    new_birth = brate * etu * adults;
+    new = round_down ? (int)new_birth : roundavg(new_birth);
 
-    new = new_birth;
-    if (new > new_food)
-	new = new_food;
+    if (!opt_NOFOOD) {
+	new_food = (int)(food / (2.0 * babyeat));
+	if (new > new_food)
+	    new = new_food;
+    }
+
     if (adults + new > maxpop)
 	new = maxpop - adults;
 

@@ -34,7 +34,6 @@
 
 #include <config.h>
 
-#include "chance.h"
 #include "commands.h"
 #include "item.h"
 #include "optlist.h"
@@ -90,13 +89,10 @@ prod(void)
     char cmnem[MAXPRCON];
     int cuse[MAXPRCON], cmax[MAXPRCON];
     int lcms, hcms;
-    int civs;
-    int uws;
     int bwork;
     int twork;
     int type;
     int eff;
-    int maxworkers;
     char mnem;
 
     if (!snxtsct(&nstr, player->argp[1]))
@@ -110,19 +106,9 @@ prod(void)
 	if (sect.sct_off)
 	    continue;
 
-	if (sect.sct_work < 100)
-	    sect.sct_work = sect.sct_work + 7 + roll(15);
-	if (sect.sct_work > 100)
-	    sect.sct_work = 100;
-	civs = (1.0 + obrate * etu_per_update) * sect.sct_item[I_CIVIL];
-	uws = (1.0 + uwbrate * etu_per_update) * sect.sct_item[I_UW];
 	natp = getnatp(sect.sct_own);
-	maxworkers = max_workers(natp->nat_level[NAT_RLEV], &sect);
-
-	work = new_work(&sect,
-			total_work(sect.sct_work, etu_per_update,
-				   civs, sect.sct_item[I_MILIT], uws,
-				   maxworkers));
+	do_feed(&sect, natp, etu_per_update, 1);
+	work = sect.sct_avail;
 	bwork = work / 2;
 
 	type = sect.sct_type;
@@ -169,14 +155,13 @@ prod(void)
 	    continue;
 
 	if (type == SCT_ENLIST) {
-	    int maxpop = max_pop(natp->nat_level[NAT_RLEV], &sect);
 	    int maxmil;
 	    int enlisted;
 
 	    if (sect.sct_own != sect.sct_oldown)
 		continue;
 	    enlisted = 0;
-	    maxmil = MIN(civs, maxpop) / 2 - sect.sct_item[I_MILIT];
+	    maxmil = sect.sct_item[I_CIVIL] / 2 - sect.sct_item[I_MILIT];
 	    if (maxmil > 0) {
 		enlisted = (etu_per_update
 			    * (10 + sect.sct_item[I_MILIT])
