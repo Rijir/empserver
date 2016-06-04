@@ -51,21 +51,20 @@ static int babies(int, int, double, int, int);
 /*
  * feed the individual sector
  */
-int
-do_feed(struct sctstr *sp, struct natstr *np, int *workp, int etu)
+void
+do_feed(struct sctstr *sp, struct natstr *np, int etu)
 {
     int work_avail;
-    int starved, sctwork;
+    int starved;
     int needed;
     int maxworkers;
     int manna;
 
     /* grow people & stuff */
-    sctwork = sp->sct_work;
 
     maxworkers = max_workers(np->nat_level[NAT_RLEV], sp);
     work_avail = new_work(sp,
-			  total_work(sctwork, etu,
+			  total_work(sp->sct_work, etu,
 				     sp->sct_item[I_CIVIL],
 				     sp->sct_item[I_MILIT],
 				     sp->sct_item[I_UW],
@@ -97,17 +96,14 @@ do_feed(struct sctstr *sp, struct natstr *np, int *workp, int etu)
 	    }
 	    sp->sct_work = 0;
 	    sp->sct_loyal += roll(8) + 1;
-	    sctwork = 0;
 	} else {
 	    if (sp->sct_work < 100)
-		sctwork = sp->sct_work + 7 + roll(15);
-	    if (sctwork > 100)
-		sctwork = 100;
-	    if (!player->simulation)
-		sp->sct_work = sctwork;
+		sp->sct_work = sp->sct_work + 7 + roll(15);
+	    if (sp->sct_work > 100)
+		sp->sct_work = 100;
 	    grow_people(sp, etu, np);
 	    work_avail = new_work(sp,
-				  total_work(sctwork, etu,
+				  total_work(sp->sct_work, etu,
 					     sp->sct_item[I_CIVIL],
 					     sp->sct_item[I_MILIT],
 					     sp->sct_item[I_UW],
@@ -120,12 +116,12 @@ do_feed(struct sctstr *sp, struct natstr *np, int *workp, int etu)
 	    /* Take away food we conjured up */
 	    sp->sct_item[I_FOOD] = 0;
     } else
-	sctwork = sp->sct_work = 100;
+	sp->sct_work = 100;
     /* Here is where we truncate extra people, always */
     trunc_people(sp, np);
 
-    *workp = work_avail;
-    return sctwork;
+    if (!sp->sct_off)
+	sp->sct_avail = work_avail;
 }
 
 int
