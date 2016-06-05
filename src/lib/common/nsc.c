@@ -46,6 +46,7 @@
 #include "product.h"
 #include "unit.h"
 
+static void *nsc_div100_up(struct valstr *, struct natstr *, void *);
 static void *nsc_ver(struct valstr *, struct natstr *, void *);
 static void *nsc_ver_maxnoc(struct valstr *, struct natstr *, void *);
 static void *nsc_sct_terr(struct valstr *, struct natstr *, void *);
@@ -241,7 +242,7 @@ struct castr dchr_ca[] = {
     {"ostr", fldoff(d_ostr), NSC_FLOAT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"dstr", fldoff(d_dstr), NSC_FLOAT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"value", fldoff(d_value), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
-    {"build", fldoff(d_build), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
+    {"bcost", fldoff(d_cost), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"lcms", fldoff(d_lcms), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"hcms", fldoff(d_hcms), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"maint", fldoff(d_maint), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
@@ -251,6 +252,9 @@ struct castr dchr_ca[] = {
     /* redundant, only for xdump backward compatibility */
     /* "cost" is deprecated in favour of "flags" flag "deity" */
     {"cost", 0, NSC_LONG, 0, nsc_dchr_cost, EF_BAD, 0, CA_DUMP_ONLY},
+    /* "build" is deprecated in favour of "bcost" */
+    {"build", fldoff(d_cost), NSC_INT, 0, nsc_div100_up,
+     EF_BAD, 0, CA_DUMP_ONLY},
     {NULL, 0, NSC_NOTYPE, 0, NULL, EF_BAD, 0, CA_DUMP}
 #undef CURSTR
 };
@@ -811,6 +815,15 @@ nsc_init(void)
 /*
  * Virtual selectors
  */
+
+static void *
+nsc_div100_up(struct valstr *val, struct natstr *natp, void *ptr)
+{
+    val->val_as.sym.get = NULL;
+    nstr_eval(val, natp->nat_cnum, ptr, NSC_LONG);
+    val->val_as.lng = (val->val_as.lng + 99) / 100;
+    return NULL;
+}
 
 static void *
 nsc_ver(struct valstr *val, struct natstr *np, void *ptr)
