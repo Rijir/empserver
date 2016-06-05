@@ -247,13 +247,15 @@ produce_sect(struct natstr *np, int etu, struct bp *bp, int p_sect[][2])
     int n, amount;
 
     for (n = 0; NULL != (sp = getsectid(n)); n++) {
-	if (sp->sct_type == SCT_WATER)
-	    continue;
 	if (sp->sct_own != np->nat_cnum)
 	    continue;
 	if (sp->sct_updated != 0)
 	    continue;
 	sp->sct_updated = 1;
+	bp_set_from_sect(bp, sp);
+
+	if (sp->sct_type == SCT_WATER)
+	    continue;
 
 	/*
 	 * When running the test suite, reseed PRNG for each sector
@@ -270,7 +272,6 @@ produce_sect(struct natstr *np, int etu, struct bp *bp, int p_sect[][2])
 	}
 
 	do_feed(sp, np, etu, 0);
-	bp_put_items(bp, sp);
 
 	if (sp->sct_off || np->nat_money < 0)
 	    continue;
@@ -289,7 +290,6 @@ produce_sect(struct natstr *np, int etu, struct bp *bp, int p_sect[][2])
 	if ((sp->sct_effic < 100 || sp->sct_type != sp->sct_newtype) &&
 	    np->nat_money >= 0) {
 	    cost = upd_buildeff(sp);
-	    bp_put_items(bp, sp);
 	    p_sect[SCT_EFFIC][0]++;
 	    p_sect[SCT_EFFIC][1] += cost;
 	    if (!player->simulation)
@@ -302,7 +302,6 @@ produce_sect(struct natstr *np, int etu, struct bp *bp, int p_sect[][2])
 	    p_sect[sp->sct_type][1] += ecost;
 	    if (!player->simulation)
 		np->nat_money -= ecost;
-	    bp_put_items(bp, sp);
 	}
 
 	/*
@@ -312,10 +311,9 @@ produce_sect(struct natstr *np, int etu, struct bp *bp, int p_sect[][2])
 	if (sp->sct_effic >= 60) {
 	    if (np->nat_money >= 0 && dchr[sp->sct_type].d_prd >= 0)
 		amount = produce(np, sp, &pcost);
-	    bp_put_items(bp, sp);
 	}
 
-	bp_put_avail(bp, sp, sp->sct_avail);
+	bp_set_from_sect(bp, sp);
 	p_sect[sp->sct_type][0] += amount;
 	p_sect[sp->sct_type][1] += pcost;
 	if (!player->simulation)

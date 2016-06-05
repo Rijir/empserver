@@ -135,5 +135,5 @@ bp_set_from_sect(struct bp *bp, struct sctstr *sp)
 struct bp *
 bp_alloc(void)
 {
-    return calloc(WORLD_SZ(), sizeof(struct bp));
+    return malloc(WORLD_SZ() * sizeof(struct bp));
 }

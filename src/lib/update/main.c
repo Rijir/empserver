@@ -89,7 +89,6 @@ update_main(void)
     memset(air_money, 0, sizeof(air_money));
     memset(sea_money, 0, sizeof(sea_money));
     memset(lnd_money, 0, sizeof(lnd_money));
-    bp = bp_alloc();
     for (n = 0; n < MAXNOC; n++) {
 	money[n] = 0;
 	if (!(np = getnatp(n)))
@@ -99,9 +98,10 @@ update_main(void)
     }
 
     logerror("preparing sectors...");
-    prepare_sects(etu, bp);
+    prepare_sects(etu);
     logerror("done preparing sectors.");
     logerror("producing for countries...");
+    bp = bp_alloc();
     for (i = 0; i < MAXNOC; i++) {
 	int p_sect[SCT_BUDG_MAX+1][2];
 
