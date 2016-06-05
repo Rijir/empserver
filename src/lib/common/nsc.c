@@ -242,9 +242,8 @@ struct castr dchr_ca[] = {
     {"ostr", fldoff(d_ostr), NSC_FLOAT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"dstr", fldoff(d_dstr), NSC_FLOAT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"value", fldoff(d_value), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
+    NSC_MVEC(fldoff(d_mat), CA_DUMP_ONLY, CA_DUMP_ONLY, CA_DUMP_ONLY),
     {"bcost", fldoff(d_cost), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
-    {"lcms", fldoff(d_lcms), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
-    {"hcms", fldoff(d_hcms), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"maint", fldoff(d_maint), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"maxpop", fldoff(d_maxpop), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"flags", fldoff(d_flags), NSC_INT, 0, NULL,
@@ -254,6 +253,11 @@ struct castr dchr_ca[] = {
     {"cost", 0, NSC_LONG, 0, nsc_dchr_cost, EF_BAD, 0, CA_DUMP_ONLY},
     /* "build" is deprecated in favour of "bcost" */
     {"build", fldoff(d_cost), NSC_INT, 0, nsc_div100_up,
+     EF_BAD, 0, CA_DUMP_ONLY},
+    /* "lcms", "hcms" are deprecated in favour of "l_build", "h_build" */
+    {"lcms", fldoff(d_mat[I_LCM]), NSC_SHORT, 0, nsc_div100_up,
+     EF_BAD, 0, CA_DUMP_ONLY},
+    {"hcms", fldoff(d_mat[I_HCM]), NSC_SHORT, 0, nsc_div100_up,
      EF_BAD, 0, CA_DUMP_ONLY},
     {NULL, 0, NSC_NOTYPE, 0, NULL, EF_BAD, 0, CA_DUMP}
 #undef CURSTR
