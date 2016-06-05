@@ -50,6 +50,7 @@ static void *nsc_ver(struct valstr *, struct natstr *, void *);
 static void *nsc_ver_maxnoc(struct valstr *, struct natstr *, void *);
 static void *nsc_sct_terr(struct valstr *, struct natstr *, void *);
 static void *nsc_sct_track(struct valstr *, struct natstr *, void *);
+static void *nsc_dchr_cost(struct valstr *, struct natstr *, void *);
 static void *nsc_cargo_nplane(struct valstr *, struct natstr *, void *);
 static void *nsc_cargo_nchopper(struct valstr *, struct natstr *, void *);
 static void *nsc_cargo_nxlight(struct valstr *, struct natstr *, void *);
@@ -240,12 +241,16 @@ struct castr dchr_ca[] = {
     {"ostr", fldoff(d_ostr), NSC_FLOAT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"dstr", fldoff(d_dstr), NSC_FLOAT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"value", fldoff(d_value), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
-    {"cost", fldoff(d_cost), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"build", fldoff(d_build), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"lcms", fldoff(d_lcms), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"hcms", fldoff(d_hcms), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"maint", fldoff(d_maint), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"maxpop", fldoff(d_maxpop), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
+    {"flags", fldoff(d_flags), NSC_INT, 0, NULL,
+     EF_SECTOR_CHR_FLAGS, NSC_BITS, CA_DUMP},
+    /* redundant, only for xdump backward compatibility */
+    /* "cost" is deprecated in favour of "flags" flag "deity" */
+    {"cost", 0, NSC_LONG, 0, nsc_dchr_cost, EF_BAD, 0, CA_DUMP_ONLY},
     {NULL, 0, NSC_NOTYPE, 0, NULL, EF_BAD, 0, CA_DUMP}
 #undef CURSTR
 };
@@ -832,6 +837,15 @@ nsc_sct_terr(struct valstr *val, struct natstr *np, void *ptr)
 	val->val_as.sym.off = offsetof(struct sctstr, sct_terr);
     val->val_as.sym.get = NULL;
     return ptr;
+}
+
+static void *
+nsc_dchr_cost(struct valstr *val, struct natstr *np, void *ptr)
+{
+    struct dchrstr *dcp = ptr;
+
+    val->val_as.lng = dcp->d_flags & D_DEITY ? -1 : 0;
+    return NULL;
 }
 
 static void *
