@@ -58,7 +58,6 @@ update_main(void)
     struct rusage rus1, rus2;
     int n;
     int i;
-    struct bp *bp;
     struct natstr *np;
 
     logerror("production update (%d etus)", etu);
@@ -101,7 +100,6 @@ update_main(void)
     prepare_sects(etu);
     logerror("done preparing sectors.");
     logerror("producing for countries...");
-    bp = bp_alloc();
     for (i = 0; i < MAXNOC; i++) {
 	int p_sect[SCT_BUDG_MAX+1][2];
 
@@ -114,24 +112,23 @@ update_main(void)
 	np->nat_money += (int)(np->nat_reserve * money_res * etu);
 
 	/* maintain units */
-	prod_ship(etu, i, bp, 0);
-	prod_plane(etu, i, bp, 0);
-	prod_land(etu, i, bp, 0);
+	prod_ship(etu, i, NULL, 0);
+	prod_plane(etu, i, NULL, 0);
+	prod_land(etu, i, NULL, 0);
 
 	/* produce all sects */
-	produce_sect(np, etu, bp, p_sect);
+	produce_sect(np, etu, NULL, p_sect);
 
 	/* build units */
-	prod_ship(etu, i, bp, 1);
-	prod_plane(etu, i, bp, 1);
-	prod_land(etu, i, bp, 1);
+	prod_ship(etu, i, NULL, 1);
+	prod_plane(etu, i, NULL, 1);
+	prod_land(etu, i, NULL, 1);
     }
     logerror("done producing for countries.");
 
     finish_sects(etu);
     prod_nat(etu);
     age_levels(etu);
-    free(bp);
 
     /* Only update mobility for non-MOB_ACCESS here, since it doesn't
        get done for MOB_ACCESS anyway during the update */
