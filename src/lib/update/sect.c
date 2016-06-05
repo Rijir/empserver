@@ -273,6 +273,14 @@ produce_sect(int natnum, int etu, struct bp *bp, int p_sect[][2])
 	if (sp->sct_updated != 0)
 	    continue;
 
+	/*
+	 * When running the test suite, reseed PRNG for each sector
+	 * with its UID, to keep results stable even when the number
+	 * of PRNs consumed changes.
+	 */
+	if (running_test_suite)
+	    seed_prng(sp->sct_uid);
+
 	np = getnatp(natnum);
 
 	if (player->simulation) {
