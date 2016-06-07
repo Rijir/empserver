@@ -34,6 +34,7 @@
 
 #include <config.h>
 
+#include "chance.h"
 #include "commands.h"
 #include "item.h"
 #include "optlist.h"
@@ -106,7 +107,13 @@ prod(void)
     while (nxtsct(&nstr, &sect)) {
 	if (!player->owner)
 	    continue;
+	if (sect.sct_off)
+	    continue;
 
+	if (sect.sct_work < 100)
+	    sect.sct_work = sect.sct_work + 7 + roll(15);
+	if (sect.sct_work > 100)
+	    sect.sct_work = 100;
 	civs = (1.0 + obrate * etu_per_update) * sect.sct_item[I_CIVIL];
 	uws = (1.0 + uwbrate * etu_per_update) * sect.sct_item[I_UW];
 	natp = getnatp(sect.sct_own);
@@ -118,8 +125,6 @@ prod(void)
 				   maxworkers));
 	bwork = work / 2;
 
-	if (sect.sct_off)
-	    continue;
 	type = sect.sct_type;
 	eff = sect.sct_effic;
 	if (sect.sct_newtype != type) {

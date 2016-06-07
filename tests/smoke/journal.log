@@ -8756,7 +8756,7 @@
     Play#1 output Play#1 1    2,2    k 100%   649  237h 0.79 $0     600i            648i             256
     Play#1 output Play#1 1    4,2    r 100%   649  7.48 0.75 $900    10d  50o 100l   40d 200o 400l 29.92
     Play#1 output Play#1 1    8,2    e 100%   649   33m 1.00 $99     33c             33c             498
-    Play#1 output Play#1 1    5,3    p 100%   602   75  1.00 $675    75l            602l             602
+    Play#1 output Play#1 1    5,3    p 100%   650   75  1.00 $675    75l            650l             650
     Play#1 output Play#1 1 23 sectors
     Play#1 output Play#1 6 0 632
     Play#1 input neweff *
@@ -9603,7 +9603,7 @@
     Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
     Play#1 output Play#1 1 PRODUCTION SIMULATION
     Play#1 output Play#1 1    sect  des eff avail  make p.e. cost   use1 use2 use3  max1 max2 max3   max
-    Play#1 output Play#1 1    1,-3   o   2%   603   10o 0.81 $0                                       10
+    Play#1 output Play#1 1    1,-3   o   2%   615   10o 0.81 $0                                       10
     Play#1 output Play#1 1   -4,-2   o   1%   599    4o 0.81 $0                                        4
     Play#1 output Play#1 1   -2,-2   o   0%   601    0o 0.81 $0                                        0
     Play#1 output Play#1 1    4,-2   t 100%   649 11.13 0.74 $4500   15d  75o 150l   40d 200o 400l 29.68
@@ -9625,7 +9625,7 @@
     Play#1 output Play#1 1    2,2    k 100%   649  242h 0.81 $0     600i            648i             261
     Play#1 output Play#1 1    4,2    r 100%   649  7.42 0.74 $900    10d  50o 100l   40d 200o 400l 29.68
     Play#1 output Play#1 1    8,2    e 100%   649   33m 1.00 $99     33c             33c             498
-    Play#1 output Play#1 1    5,3    p 100%   608   75  1.00 $675    75l            608l             608
+    Play#1 output Play#1 1    5,3    p 100%   650   75  1.00 $675    75l            650l             650
     Play#1 output Play#1 1 23 sectors
     Play#1 output Play#1 6 0 635
     Play#1 input neweff *
@@ -10655,7 +10655,7 @@
     Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
     Play#1 output Play#1 1 PRODUCTION SIMULATION
     Play#1 output Play#1 1    sect  des eff avail  make p.e. cost   use1 use2 use3  max1 max2 max3   max
-    Play#1 output Play#1 1    1,-3   j 100%   385  319l 0.83 $0     385i            385i             319
+    Play#1 output Play#1 1    1,-3   j 100%   475  393l 0.83 $0     475i            475i             393
     Play#1 output Play#1 1   -4,-2   k 100%   474  196h 0.83 $0     474i            474i             196
     Play#1 output Play#1 1   -2,-2   j 100%   474  392l 0.83 $0     474i            474i             392
     Play#1 output Play#1 1    4,-2   t 100%   649 11.11 0.74 $4500   15d  75o 150l   40d 200o 400l 29.61
@@ -12352,7 +12352,7 @@
     Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
     Play#1 output Play#1 1 PRODUCTION SIMULATION
     Play#1 output Play#1 1    sect  des eff avail  make p.e. cost   use1 use2 use3  max1 max2 max3   max
-    Play#1 output Play#1 1    1,-3   j 100%   330  279l 0.85 $0     330i            330i             279
+    Play#1 output Play#1 1    1,-3   j 100%   438  371l 0.85 $0     438i            438i             371
     Play#1 output Play#1 1   -4,-2   k 100%   600  254h 0.85 $0     600i            600i             254
     Play#1 output Play#1 1   -2,-2   j 100%   599  507l 0.85 $0     599i            599i             507
     Play#1 output Play#1 1    2,-2   o  47%   474  188o 0.85 $0                                      188
@@ -13760,7 +13760,7 @@
     Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
     Play#1 output Play#1 1 PRODUCTION SIMULATION
     Play#1 output Play#1 1    sect  des eff avail  make p.e. cost   use1 use2 use3  max1 max2 max3   max
-    Play#1 output Play#1 1    1,-3   j 100%   240  207l 0.86 $0     240i            240i             207
+    Play#1 output Play#1 1    1,-3   j 100%   324  279l 0.86 $0     324i            324i             279
     Play#1 output Play#1 1   -4,-2   k 100%   600  258h 0.86 $0     600i            600i             258
     Play#1 output Play#1 1   -2,-2   j 100%   599  516l 0.86 $0     599i            599i             516
     Play#1 output Play#1 1    2,-2   % 100%   474  999p 7.61 $131   131o            131o             999
@@ -15108,7 +15108,7 @@
     Play#1 output Play#1 1 Thu Jan  1 00:00:00 1970
     Play#1 output Play#1 1 PRODUCTION SIMULATION
     Play#1 output Play#1 1    sect  des eff avail  make p.e. cost   use1 use2 use3  max1 max2 max3   max
-    Play#1 output Play#1 1    1,-3   j 100%   240  210l 0.87 $0     240i            240i             210
+    Play#1 output Play#1 1    1,-3   j 100%   360  314l 0.87 $0     360i            360i             314
     Play#1 output Play#1 1   -4,-2   k 100%   601  262h 0.87 $0     600i            600i             262
     Play#1 output Play#1 1   -2,-2   j 100%   600  524l 0.87 $0     600i            600i             524
     Play#1 output Play#1 1    2,-2   % 100%   649  453p 7.95 $57     57o            126o             999

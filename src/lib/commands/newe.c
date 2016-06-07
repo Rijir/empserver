@@ -33,6 +33,7 @@
 
 #include <config.h>
 
+#include "chance.h"
 #include "commands.h"
 #include "item.h"
 #include "optlist.h"
@@ -62,6 +63,10 @@ newe(void)
 	if (!player->owner)
 	    continue;
 	if (!sect.sct_off) {
+	    if (sect.sct_work < 100)
+		sect.sct_work = sect.sct_work + 7 + roll(15);
+	    if (sect.sct_work > 100)
+		sect.sct_work = 100;
 	    civs = (1.0 + obrate * etu_per_update) * sect.sct_item[I_CIVIL];
 	    uws = (1.0 + uwbrate * etu_per_update) * sect.sct_item[I_UW];
 	    natp = getnatp(sect.sct_own);
