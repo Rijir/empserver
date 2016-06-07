@@ -48,11 +48,11 @@ int
 upd_buildeff(struct sctstr *sp)
 {
     int avail = sp->sct_avail / 2 * 100;
-    int cost;
+    double cost;
     int delta, build;
     struct dchrstr *dcp;
 
-    cost = 0;
+    cost = 0.0;
 
     if (sp->sct_type != sp->sct_newtype) {
 	/*
@@ -68,8 +68,8 @@ upd_buildeff(struct sctstr *sp)
 	    sp->sct_effic = 0;
 	    sp->sct_type = sp->sct_newtype;
 	}
-	avail -= (build + 3) / 4 * dcp->d_bwork;
-	cost += (build + 3) / 4;
+	avail -= roundavg(build / 4.0 * dcp->d_bwork);
+	cost += build / 4.0;
     }
 
     if (sp->sct_type == sp->sct_newtype) {
@@ -80,11 +80,11 @@ upd_buildeff(struct sctstr *sp)
 	build = get_materials(sp, dcp->d_mat, delta);
 	sp->sct_effic += build;
 	avail -= build * dcp->d_bwork;
-	cost += (build * dcp->d_cost + 99) / 100;
+	cost += build * dcp->d_cost / 100.0;
     }
 
     sp->sct_avail = (sp->sct_avail + 1) / 2 + avail / 100;
-    return cost;
+    return roundavg(cost);
 }
 
 /*
