@@ -259,6 +259,7 @@ sub write_toc {
     open(TOC, ">info/toc")
 	or die "Can't open info/toc for writing: $!";
     print TOC join("\n", sort @toc);
+    print TOC "\n";
     close TOC;
 }
 
