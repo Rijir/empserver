@@ -34,7 +34,7 @@
 
 #include "version.h"
 
-char version[] = PACKAGE_STRING;
+char version[] = PACKAGE_NAME " " VERSION;
 char legal[] =
 "Copyright (C) 1986-2016, Dave Pare, Jeff Bailey, Thomas Ruschak,\n"
 "              Ken Stevens, Steve McClure, Markus Armbruster\n"

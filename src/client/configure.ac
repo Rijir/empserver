@@ -37,7 +37,9 @@
 # whether it's worth fixing.
 
 AC_PREREQ(2.69)
-AC_INIT([Empire Client], [4.3.34], [wolfpack@wolfpackempire.com],,
+AC_INIT([Wolfpack Empire Client],
+	m4_esyscmd([cat .tarball-version]),
+	[wolfpack@wolfpackempire.com],,
 	[http://www.wolfpackempire.com/])
 AC_CONFIG_SRCDIR([empire.6])
 AC_CONFIG_HEADERS([config.h])
@@ -87,6 +89,8 @@ test "$EMPIREPORT" || EMPIREPORT=6789
 MY_WITH_TERMINFO
 
 ### Output
+
+AC_DEFINE_UNQUOTED(VERSION, "`cat .tarball-version`", [Tarball version])
 
 AC_CONFIG_FILES([Makefile ipglob.c])
 AC_OUTPUT
