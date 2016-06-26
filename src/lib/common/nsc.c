@@ -48,13 +48,11 @@
 #include "unit.h"
 #include "version.h"
 
-static void *nsc_div100_up(struct valstr *, struct natstr *, void *);
 static void *nsc_ver(struct valstr *, struct natstr *, void *);
 static void *nsc_ver_maxnoc(struct valstr *, struct natstr *, void *);
 static void *nsc_ver_version(struct valstr *, struct natstr *, void *);
 static void *nsc_sct_terr(struct valstr *, struct natstr *, void *);
 static void *nsc_sct_track(struct valstr *, struct natstr *, void *);
-static void *nsc_dchr_cost(struct valstr *, struct natstr *, void *);
 static void *nsc_cargo_nplane(struct valstr *, struct natstr *, void *);
 static void *nsc_cargo_nchopper(struct valstr *, struct natstr *, void *);
 static void *nsc_cargo_nxlight(struct valstr *, struct natstr *, void *);
@@ -247,22 +245,11 @@ struct castr dchr_ca[] = {
     {"dstr", fldoff(d_dstr), NSC_FLOAT, 0, NULL, EF_BAD, 0, CA_DUMP},
     NSC_MVEC(fldoff(d_mat), CA_DUMP_ONLY, CA_DUMP_ONLY, CA_DUMP_ONLY),
     {"bwork", fldoff(d_bwork), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
-    {"bcost", fldoff(d_cost), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
+    {"cost", fldoff(d_cost), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"maint", fldoff(d_maint), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"maxpop", fldoff(d_maxpop), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"flags", fldoff(d_flags), NSC_INT, 0, NULL,
      EF_SECTOR_CHR_FLAGS, NSC_BITS, CA_DUMP},
-    /* redundant, only for xdump backward compatibility */
-    /* "cost" is deprecated in favour of "flags" flag "deity" */
-    {"cost", 0, NSC_LONG, 0, nsc_dchr_cost, EF_BAD, 0, CA_DUMP_ONLY},
-    /* "build" is deprecated in favour of "bcost" */
-    {"build", fldoff(d_cost), NSC_INT, 0, nsc_div100_up,
-     EF_BAD, 0, CA_DUMP_ONLY},
-    /* "lcms", "hcms" are deprecated in favour of "l_build", "h_build" */
-    {"lcms", fldoff(d_mat[I_LCM]), NSC_SHORT, 0, nsc_div100_up,
-     EF_BAD, 0, CA_DUMP_ONLY},
-    {"hcms", fldoff(d_mat[I_HCM]), NSC_SHORT, 0, nsc_div100_up,
-     EF_BAD, 0, CA_DUMP_ONLY},
     {NULL, 0, NSC_NOTYPE, 0, NULL, EF_BAD, 0, CA_DUMP}
 #undef CURSTR
 };
@@ -383,10 +370,6 @@ struct castr plchr_ca[] = {
     {"stealth", fldoff(pl_stealth), NSC_INT, 0, NULL, EF_BAD, 0, CA_DUMP},
     {"flags", fldoff(pl_flags), NSC_INT, 0, NULL,
      EF_PLANE_CHR_FLAGS, NSC_BITS, CA_DUMP},
-    /* redundant, only for xdump backward compatibility */
-    /* "crew" is deprecated in favour of "m_build" */
-    {"crew", fldoff(pl_mat[I_MILIT]), NSC_SHORT, 0, NULL, EF_BAD, 0,
-     CA_DUMP_ONLY},
     {NULL, 0, NSC_NOTYPE, 0, NULL, EF_BAD, 0, CA_DUMP}
 #undef CURSTR
 };
@@ -825,15 +808,6 @@ nsc_init(void)
  */
 
 static void *
-nsc_div100_up(struct valstr *val, struct natstr *natp, void *ptr)
-{
-    val->val_as.sym.get = NULL;
-    nstr_eval(val, natp->nat_cnum, ptr, NSC_LONG);
-    val->val_as.lng = (val->val_as.lng + 99) / 100;
-    return NULL;
-}
-
-static void *
 nsc_ver(struct valstr *val, struct natstr *np, void *ptr)
 {
     struct keymatch *kp = &configkeys[val->val_as.sym.off];
@@ -866,15 +840,6 @@ nsc_sct_terr(struct valstr *val, struct natstr *np, void *ptr)
 	val->val_as.sym.off = offsetof(struct sctstr, sct_terr);
     val->val_as.sym.get = NULL;
     return ptr;
-}
-
-static void *
-nsc_dchr_cost(struct valstr *val, struct natstr *np, void *ptr)
-{
-    struct dchrstr *dcp = ptr;
-
-    val->val_as.lng = dcp->d_flags & D_DEITY ? -1 : 0;
-    return NULL;
 }
 
 static void *
