@@ -1042,6 +1042,20 @@ edit_land(struct lndstr *land, char *key, char *p)
 	divine_load((struct empobj *)land, EF_LAND, arg);
 	land->lnd_land = arg;
 	break;
+    case 'A':
+	arg = LIMIT_TO(arg, 0, PLG_EXPOSED);
+	divine_unit_change_quiet((struct empobj *)land, "Plague stage",
+				 arg != land->lnd_pstage,
+				 "from %d to %d", land->lnd_pstage, arg);
+	land->lnd_pstage = arg;
+	break;
+    case 'b':
+	arg = LIMIT_TO(arg, 0, 32767);
+	divine_unit_change_quiet((struct empobj *)land, "Plague time",
+				 arg != land->lnd_ptime,
+				 "from %d to %d", land->lnd_ptime, arg);
+	land->lnd_ptime = arg;
+	break;
     case 'Z':
 	arg = LIMIT_TO(arg, 0, 100);
 	divine_unit_change((struct empobj *)land, "Retreat percentage",
