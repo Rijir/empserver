@@ -117,7 +117,14 @@ setcont(natid us, natid them, int contact)
 
     if (CANT_HAPPEN(!np))
 	return;
-    putcontact(np, them, contact);
+
+    if (CANT_HAPPEN(contact < 0))
+	contact = 0;
+    if (CANT_HAPPEN(contact > 255))
+	contact = 255;
+
+    if (np->nat_contact[them] < contact)
+	np->nat_contact[them] = contact;
     putnat(np);
 }
 
