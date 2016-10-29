@@ -96,7 +96,7 @@ natarg(char *arg, char *prompt)
 	return -1;
     if (opt_HIDDEN) {
 	if (!player->god
-	    && !in_contact(getnatp(player->cnum), np->nat_cnum)) {
+	    && !in_contact(player->cnum, np->nat_cnum)) {
 	    if (np->nat_stat != STAT_GOD) {
 		pr("Country '%s' has not been contacted.\n", arg);
 		return -1;
